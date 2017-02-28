@@ -79,3 +79,37 @@ body, html {
     .index-curse a i, .index-curse a b {
       display: block;
       font-weight: normal; }
+
+.myself {
+  width: 100%; }
+  .myself .banner {
+    width: 100%; }
+    .myself .banner a {
+      display: block; }
+      .myself .banner a img {
+        display: block;
+        width: 100%; }
+  .myself .sect {
+    width: 100%; }
+    .myself .sect .my {
+      display: -webkit-box;
+      width: 100%;
+      padding: 0 30px;
+      border-bottom: 1px solid #eee; }
+      .myself .sect .my span {
+        line-height: 40px;
+        display: block;
+        color: #ccc; }
+        .myself .sect .my span:nth-child(1) {
+          -webkit-box-flex: 1; }
+  .myself .but {
+    width: 100px;
+    height: 40px;
+    margin: 50% 40%;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    text-align: center;
+    background: orange; }
+    .myself .but a {
+      line-height: 40px;
+      color: #fff; }
