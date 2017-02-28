@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*公共样式*/
+<<<<<<< HEAD
 .foot {
   height: 44px;
   position: fixed;
@@ -12,3 +13,10 @@
     -webkit-box-flex: 1; }
 
 /*公共样式*/
+=======
+/*公共样式*/
+.index_title {
+  font-size: 20px; }
+  .index_title a {
+    color: red; }
+>>>>>>> 215b4cb751627cc0c1b3b45a1f8f2dd4278f4cad
