@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,KAAK;EAED,MAAM,EAAE,IAAI;EACZ,QAAQ,EAAE,KAAK;EACf,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,IAAI;EAChB,OAAO,EAAE,WAAW;EACpB,gBAAgB,EAAC,MAAM;EACvB,iBAAiB,EAAC,MAAM;EACxB,OAAC;IACE,gBAAgB,EAAC,CAAC;IAClB,OAAO,EAAE,KAAK",
-"sources": ["../www/public/scss/base/foot.scss"],
-"names": [],
-"file": "ionic.app.css"
-}
