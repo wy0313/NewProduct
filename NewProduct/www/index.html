@@ -16,8 +16,11 @@
       }
     </script>-->
 
+
+    <!-- css -->
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/ionic.app.css">
+    <link rel="stylesheet" href="css/reset.css">
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
@@ -30,11 +33,23 @@
     <script src="cordova.js"></script>
 
     <!-- your app's js -->
-    <script src="js/app.js"></script>
-    <script src="js/controllers.js"></script>
-    <script src="js/services.js"></script>
+
+
+    <script src="index.js"></script>
+    <script src="config/router.config.js"></script>
+
+    <!-- 组件 -->
+    <script src="components/header/header.directive.js"></script>
+    <script src="components/footer/footer.directive.js"></script>
+
+    <!-- 页面 -->
+    <script src="controllers/index/index.ctrl.js"></script>
+    <script src="controllers/bank/bank.ctrl.js"></script>
+    <script src='controllers/know/know.ctrl.js'></script>
+    <script src="controllers/myself/myself.ctrl.js"></script>
+
   </head>
-  <body ng-app="starter">
+  <body ng-app="myApp">
     <!--
       The nav bar that will be updated as we navigate between views.
     -->
