@@ -1,0 +1,13 @@
+.foot {
+  height: 44px;
+  position: fixed;
+  bottom: 0;
+  background: #ccc;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center; }
+  .foot a {
+    -webkit-box-flex: 1;
+    display: block; }
+
+/*# sourceMappingURL=ionic.app.css.map */

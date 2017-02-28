@@ -1,129 +1,64 @@
-.home{
-	width:100%;
-	/* .banner{
-		width:100%;
-		img{
-			width:100%;
-		}
-	} */
-	#banner{
+.index-banner{
+	width: 100%;
+	position: relative;
+	.swiper-wrapper{
+		width: 100%;
 		.swiper-slide{
-			overflow: hidden;
+			width: 100%;
 			img{
-				display: block;
-				width: 200%;
-				margin-left: -50%;
+				width: 100%;
 			}
 		}
-		
 	}
-	.nav{
-		padding: 0.1rem 0;
+}
+.index-nav{
+	width: 100%;
+	display: -webkit-box;
+	padding: 3% 0;
+	a{
+		-webkit-box-flex:1; 
+		display: block;
 		display: -webkit-box;
-		-webkit-box-align:center;
+		-webkit-box-orient:vertical;
 		-webkit-box-pack:center;
-		a{
+		-webkit-box-align:center;
+		i,span{
 			display: block;
-			-webkit-box-flex:1;
-			width:0;
-			display: -webkit-box;
-			-webkit-box-pack:center;
-			-webkit-box-orient:vertical;
-			b,span{
-				display: block;
-				text-align: center;
-			}
-			b{
-				color: #000;
-				font-size: 0.2rem;
-			}
-			span{
-				color:#999;
-				font-size: 0.12rem;
-			}
 		}
+		i{
+		 width:50%;
+			img{
+			    width: 100%;
+		      }
+		} 
 	}
-	.subject{
-		.sub-title{
-			width: 100%;
-			display: -webkit-box;
-			-webkit-box-align:center;
-			-webkit-box-pack:center;
-			background: #F9F9F9;
-			height: 0.46rem;
-			h2{
-				color: @base-color;
-				text-align: center;
-				font-weight: bold;
-				padding: 0.05rem 0.2rem;
-				border-bottom: 0.01rem solid @base-color;
-			}	
-		}
-		.sub-con{
-			width: 100%;
-			.sub-nav{
-				width: 100%;
-				overflow: auto;
-				background:#fff;
-				.sub-list{
-					display: -webkit-box;
-					-webkit-box-align:center;
-					li{
-						padding: 10px;
-						font-weight: bold;
-						&.on{
-							color: @base-color;
-						}
-					}
-				}
-			}
-			.list{
-				width: 100%;
-				a{
-					display: block;
-					width: 100%;
-					position: relative;
-					border-bottom: #f0f0f1 solid 1px;
-					padding: 0.05rem 0.05rem;
-					img{
-						width: 100%;
-						border-radius: 0.05rem;
-					}
-					div{
-						position: absolute;
-						top:0;
-						left:0;
-						bottom: 0;
-						right:0;
-						display: -webkit-box;
-						-webkit-box-pack:center;
-						-webkit-box-align:center;
-						color: #fff;
-						text-align: center;
-						font: 0.16rem/0.2rem '微软雅黑';
-						
-						
-					}
-					.tit{
-						font-size: 0.14rem;
-						color: #000;
-						line-height: 0.24rem;
-					}
-					.author,.regionName{
-						color: #ccc;
-						font-size: 0.1rem;
-						line-height: 0.24rem;
-						span,i{
-							font-size: 0.1rem;
-							font-style: normal;
-						}
-						i{
-							margin-left: 0.1rem;
-						}
-					}
-				}
-
-			}
-		}
+}
+.second{
+	background:#f4f4f4;
+}
+.index-sursetitle{
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+    padding:3%;
+}
+.index-curse{
+	display: -webkit-box;
+	a{
+	   border:solid 1px #ccc;
+       font-size: 12px;
+	   border-radius: 30px 30px;
+	   -webkit-box-flex:1;
+	   margin: 10px;
+	   padding: 2% 0;
+	   display: -webkit-box;
+	   -webkit-box-orient:vertical;
+	   -webkit-box-pack:center;
+	   -webkit-box-align:center;
+	   color: #000;
+       i,b{
+       	  display: block;
+       	  font-weight: normal;
+       }
 	}
 }

@@ -1,0 +1,83 @@
+body, html {
+  width: 100%;
+  height: 100%; }
+
+.foot {
+  width: 100%;
+  height: 44px;
+  position: fixed;
+  bottom: 0;
+  background: #f4f4f4;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  border-top: solid 1px #ccc; }
+  .foot .on {
+    color: #eca800; }
+  .foot a {
+    -webkit-box-flex: 1;
+    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    color: #a4a4a4; }
+    .foot a i, .foot a span {
+      display: block;
+      text-align: center; }
+
+.index-banner {
+  width: 100%;
+  position: relative; }
+  .index-banner .swiper-wrapper {
+    width: 100%; }
+    .index-banner .swiper-wrapper .swiper-slide {
+      width: 100%; }
+      .index-banner .swiper-wrapper .swiper-slide img {
+        width: 100%; }
+
+.index-nav {
+  width: 100%;
+  display: -webkit-box;
+  padding: 3% 0; }
+  .index-nav a {
+    -webkit-box-flex: 1;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-box-align: center; }
+    .index-nav a i, .index-nav a span {
+      display: block; }
+    .index-nav a i {
+      width: 50%; }
+      .index-nav a i img {
+        width: 100%; }
+
+.second {
+  background: #f4f4f4; }
+
+.index-sursetitle {
+  width: 100%;
+  text-align: center;
+  font-weight: bolder;
+  padding: 3%; }
+
+.index-curse {
+  display: -webkit-box; }
+  .index-curse a {
+    border: solid 1px #ccc;
+    font-size: 12px;
+    border-radius: 30px 30px;
+    -webkit-box-flex: 1;
+    margin: 10px;
+    padding: 2% 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    color: #000; }
+    .index-curse a i, .index-curse a b {
+      display: block;
+      font-weight: normal; }
+
+/*# sourceMappingURL=style.css.map */
