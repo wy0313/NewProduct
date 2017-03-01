@@ -1,0 +1,36 @@
+.comment{
+	  width: 100%;
+	  
+	  .grade{
+	  	width: 100%;
+	  	padding: 15px;
+	  	background: #eee;
+	  }
+	  dl{
+	  	width: 100%;
+	  	height: 20%;
+	  	dt{
+	  		width: 20%;
+	  		border-radius:60px;
+	  		overflow: hidden; 
+	  		float: left;
+	  		img{
+	  			width: 100%;
+	  		}
+	  	 }
+	  }
+	  article{
+	  	clear:both;
+	  }
+	  p{
+	  	width: 100%;
+	  	padding: 15px;
+	  	b{
+	  		color: red;
+	  	}
+	  }
+	  .comment-time{
+	  	padding-left:15px;
+	  	color: #ccc; 
+	  }
+}
