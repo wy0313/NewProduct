@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title></title>
-    <link rel="stylesheet" href="./public/css/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link rel="manifest" href="manifest.json">
+   
+    <link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="manifest" href="manifest.json">
      <link href="lib/css/slidingTabs.css" rel="stylesheet">
 
@@ -22,6 +25,8 @@
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link rel="stylesheet" href="css/ionic.app.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="lib/Swiper-3.4.0/css/swiper.css">
+    <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above -->
     <link href="css/ionic.app.css" rel="stylesheet">
@@ -33,13 +38,15 @@
 
 
     <!-- cordova script (this will be a 404 during development) -->
-    <script src="cordova.js"></script>
+    <!-- <script src="cordova.js"></script> -->
 
     <!-- your app's js -->
 
 
     <script src="index.js"></script>
     <script src="config/router.config.js"></script>
+    <script src="lib/Swiper-3.4.0/js/swiper.min.js"></script>
+
      <script src="filter/toTrusted.js"></script>
     <!-- 组件 -->
     <script src="components/header/header.directive.js"></script>
@@ -55,6 +62,14 @@
     <script src='controllers/bank/stream.ctrl.js'></script>
     <script src="controllers/know/know.ctrl.js"></script>
     <script src="controllers/myself/myself.ctrl.js"></script>
+    
+    <script src="controllers/myself/oneself/comment.ctrl.js"></script>
+
+    <script src="controllers/myself/oneself/news.ctrl.js"></script>
+      <script src="controllers/myself/oneself/notes.ctrl.js"></script>
+        <script src="controllers/myself/oneself/mynotes.ctrl.js"></script>
+    
+    <script src="controllers/myself/oneself/oneself.ctrl.js"></script>
 
   </head>
   <body ng-app="myApp">
@@ -62,7 +77,7 @@
       The nav bar that will be updated as we navigate between views.
     -->
     <ion-nav-bar class="bar-stable">
-      <ion-nav-back-button>
+      <ion-nav-back-button>返回
       </ion-nav-back-button>
     </ion-nav-bar>
     <!--
