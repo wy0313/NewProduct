@@ -149,11 +149,13 @@ body, html {
   font-size: 12px;
   display: -webkit-box;
   -webkit-box-pack: justify; }
+  .notes-list a.item {
+    padding: 0; }
   .notes-list a > i {
     width: 70%;
     display: block;
     display: -webkit-box;
-    padding: 0 10px; }
+    padding: 16px 10px; }
     .notes-list a > i b {
       width: 70%;
       font-weight: normal;
@@ -166,11 +168,43 @@ body, html {
   .notes-list a > span {
     width: 30%;
     color: #faa95e;
+    padding: 16px 10px;
+    border-bottom: #ccc solid 2px;
     display: block;
-    padding: 0 10px;
     text-align: right; }
     .notes-list a > span i {
       margin-left: 10px; }
+
+.notes-cont h2 {
+  margin-top: 44px;
+  padding: 30px 10px;
+  width: 100%;
+  text-align: center;
+  background: #f4f4f4; }
+
+.notes-cont article {
+  padding: 10px;
+  color: #999; }
+
+.notes-cont .save {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background: #f5f5f5;
+  display: -webkit-box;
+  -webkit-box-pack: justify;
+  -webkit-box-align: center; }
+  .notes-cont .save a {
+    display: block;
+    padding: 0 30px;
+    -webkit-box-orient: vertical;
+    color: #000; }
+    .notes-cont .save a span, .notes-cont .save a i {
+      display: block;
+      text-align: center; }
+    .notes-cont .save a.on {
+      color: #faa95e; }
 
 .comment {
   width: 100%; }
@@ -198,3 +232,39 @@ body, html {
   .comment .comment-time {
     padding-left: 15px;
     color: #ccc; }
+
+.oneself {
+  width: 100%; }
+  .oneself .banner {
+    width: 100%; }
+    .oneself .banner a {
+      display: block; }
+      .oneself .banner a img {
+        display: block;
+        width: 100%; }
+  .oneself .data {
+    width: 100%;
+    height: 40px; }
+    .oneself .data .text {
+      margin: 0 30px;
+      display: -webkit-box; }
+      .oneself .data .text label {
+        display: block;
+        width: 30%;
+        line-height: 40px; }
+      .oneself .data .text input {
+        display: block;
+        width: 60%;
+        text-align: justify;
+        padding-left: 50px; }
+  .oneself .but {
+    width: 100px;
+    height: 40px;
+    margin: 50% 38%;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+    text-align: center;
+    background: orange; }
+    .oneself .but a {
+      line-height: 40px;
+      color: #fff; }
