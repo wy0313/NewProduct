@@ -1,7 +1,7 @@
 angular.module("myApp").config(function($stateProvider,$urlRouterProvider){
 	
 	$urlRouterProvider.when("", "/index");
-     
+    // $urlRouterProvider.when("/bank","/bank/bank/history")
 	$stateProvider
 	.state("index",{
 		url:"/index",
