@@ -19,10 +19,11 @@ angular.module("myApp").config(function($stateProvider,$urlRouterProvider){
 		controller:"knowCtrl"
 	})
 	.state("myself",{
-		url:"myself",
+		url:"/myself",
 		templateUrl:"./controllers/myself/myself.html",
 		controller:"myselfCtrl"
 	})
+	
 	.state("news",{
 		url:"/news",
 		templateUrl:"./controllers/myself/oneself/news.html",
@@ -38,14 +39,25 @@ angular.module("myApp").config(function($stateProvider,$urlRouterProvider){
 				templateUrl:"./controllers/myself/oneself/mynotes.html",
 				controller:"mynotesCtrl"
 			})
-	.state("comment",{
-		url:"/comment",
-		templateUrl:"./controllers/myself/oneself/comment.html",
-		controller:"commentCtrl"
+		.state("comment",{
+			url:"/comment",
+			templateUrl:"./controllers/myself/oneself/comment.html",
+			controller:"commentCtrl"
+		})
+		.state("oneself",{
+			url:"/oneself",
+			templateUrl:"./controllers/myself/oneself/oneself.html",
+			controller:"oneselfCtrl"
+		})
+
+	.state("course",{
+		url:"/course",
+		templateUrl:"./controllers/course/course.html",
+		controller:"courseCtrl"
 	})
-	.state("oneself",{
-		url:"/oneself",
-		templateUrl:"./controllers/myself/oneself/oneself.html",
-		controller:"oneselfCtrl"
-	})
+		.state("content",{
+			url:"/content",
+			templateUrl:"./controllers/course.content/content.html",
+			controller:"contentCtrl"
+		})
 })

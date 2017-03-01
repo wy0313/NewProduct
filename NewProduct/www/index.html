@@ -21,17 +21,22 @@
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link rel="stylesheet" href="css/ionic.app.css">
     <link rel="stylesheet" href="css/reset.css">
+
     <link rel="stylesheet" href="lib/Swiper-3.4.0/css/swiper.css">
     <link rel="stylesheet" href="lib/Font-Awesome-3.2.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./lib/ionic/bootstrap.min.css">
+
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
 
     <!-- ionic/angularjs js -->
+    <script src="./lib/ionic/jquery-2.1.1.min.js"></script>
     <script src="lib/ionic/js/ionic.bundle.js"></script>
-
+    <script src="./lib/ionic/bootstrap.min.js"></script>
     <!-- cordova script (this will be a 404 during development) -->
     <!-- <script src="cordova.js"></script> -->
 
@@ -60,8 +65,13 @@
     
     <script src="controllers/myself/oneself/oneself.ctrl.js"></script>
 
+    <script src="controllers/course/course.ctrl.js"></script>
+
+      <script src="controllers/course.content/content.ctrl.js"></script>
+
+
   </head>
-  <body ng-app="myApp">
+  <body ng-app="myApp" >
     <!--
       The nav bar that will be updated as we navigate between views.
     -->
