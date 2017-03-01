@@ -1,0 +1,27 @@
+.news-list{
+	li{
+		font-size: 10px;
+		padding: 0;
+		border-color:#f5f5f5;
+		a{
+			color: #ccc;
+			display: block;
+			display: -webkit-box;
+			span{
+				display: block;
+				width: 25%;
+				color:red;
+				text-align: center;
+				border-right: #f5f5f5 solid 1px;
+				padding: 10px;
+			}
+			i{
+				display: block;
+				width: 70%;
+				overflow: hidden;
+				padding: 10px;
+			}
+		}
+			
+	}
+}
