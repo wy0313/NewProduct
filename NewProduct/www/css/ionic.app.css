@@ -384,3 +384,129 @@ body, html {
           color: #999; }
           .content .con .right p span.on {
             color: red; }
+
+.course {
+  width: 100%;
+  height: auto;
+  color: #F4F4F4;
+  margin-top: 15px; }
+  .course nav {
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    background: #fff;
+    border-bottom: 1px solid #EEEEEE; }
+    .course nav a {
+      display: block;
+      font-size: 12px;
+      font-weight: bolder;
+      border: 1px solid #ccc;
+      border-radius: 50px;
+      width: 50px;
+      height: 50px;
+      display: -webkit-box;
+      -webkit-box-align: center;
+      -webkit-box-pack: center;
+      margin: 10px;
+      color: #9A9A9A; }
+      .course nav a.on {
+        background: #FD9A00;
+        font-weight: bolder;
+        color: #fff;
+        border: none; }
+  .course #duan div .hang {
+    width: 100%;
+    display: -webkit-box;
+    border-bottom: 1px solid #EEEEEE; }
+    .course #duan div .hang dt {
+      width: 70px;
+      padding: 10px 0;
+      display: -webkit-box;
+      -webkit-box-pack: center;
+      -webkit-box-align: center;
+      padding-right: 10px; }
+      .course #duan div .hang dt img {
+        display: block;
+        width: 100%; }
+    .course #duan div .hang dd {
+      -webkit-box-flex: 1;
+      padding-left: 0;
+      box-sizing: border-box;
+      display: -webkit-box;
+      -webkit-box-pack: center;
+      -webkit-box-align: center; }
+      .course #duan div .hang dd aside {
+        display: -webkit-box;
+        -webkit-box-pack: justify;
+        width: 100%;
+        padding-right: 10px; }
+        .course #duan div .hang dd aside a {
+          display: block;
+          color: #666;
+          font-size: 12px; }
+        .course #duan div .hang dd aside .marey {
+          color: #FA6702; }
+
+.content {
+  width: 100%; }
+  .content div {
+    width: 100%; }
+    .content div img {
+      display: block;
+      width: 100%; }
+  .content aside {
+    margin-top: 20px;
+    padding: 10px 0;
+    display: -webkit-box;
+    -webkit-box-pack: justify;
+    width: 100%;
+    padding-right: 10px;
+    font-size: 14px; }
+    .content aside a {
+      display: block;
+      display: -webkit-box;
+      color: #666;
+      font-size: 12px;
+      -webkit-box-align: center; }
+      .content aside a i {
+        display: block;
+        font-size: 14px;
+        margin-right: 10px; }
+      .content aside a .ll {
+        background: #FD9A00;
+        padding: 10px;
+        border-radius: 100px;
+        color: #fff;
+        font-weight: bolder;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        display: block; }
+        .content aside a .ll span {
+          position: absolute;
+          top: 50%;
+          margin-top: -25%; }
+  .content p {
+    margin-top: 10px;
+    line-height: 20px;
+    color: #B8B8B8; }
+
+.foo {
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid #ccc;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  z-index: 100p; }
+  .foo button {
+    width: 80px;
+    height: 25px;
+    border-radius: 50px;
+    background: #FD9A00;
+    color: #fff;
+    border: none;
+    font-size: 18px; }
