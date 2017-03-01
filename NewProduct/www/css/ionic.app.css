@@ -92,6 +92,7 @@ body, html {
   .myself .sect {
     width: 100%; }
     .myself .sect .my {
+      display: block;
       display: -webkit-box;
       width: 100%;
       padding: 0 30px;
@@ -111,5 +112,41 @@ body, html {
     text-align: center;
     background: orange; }
     .myself .but a {
+      line-height: 40px;
+      color: #fff; }
+
+.oneself {
+  width: 100%; }
+  .oneself .banner {
+    width: 100%; }
+    .oneself .banner a {
+      display: block; }
+      .oneself .banner a img {
+        display: block;
+        width: 100%; }
+  .oneself .data {
+    width: 100%;
+    height: 40px; }
+    .oneself .data .text {
+      margin: 0 30px;
+      display: -webkit-box; }
+      .oneself .data .text label {
+        display: block;
+        width: 30%;
+        line-height: 40px; }
+      .oneself .data .text input {
+        display: block;
+        width: 60%;
+        text-align: justify;
+        padding-left: 50px; }
+  .oneself .but {
+    width: 100px;
+    height: 40px;
+    margin: 50% 38%;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+    text-align: center;
+    background: orange; }
+    .oneself .but a {
       line-height: 40px;
       color: #fff; }

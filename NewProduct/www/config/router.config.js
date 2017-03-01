@@ -23,4 +23,9 @@ angular.module("myApp").config(function($stateProvider,$urlRouterProvider){
 		templateUrl:"./controllers/myself/myself.html",
 		controller:"myselfCtrl"
 	})
+	.state("oneself",{
+		url:"/oneself",
+		templateUrl:"./controllers/myself/oneself/oneself.html",
+		controller:"oneselfCtrl"
+	})
 })

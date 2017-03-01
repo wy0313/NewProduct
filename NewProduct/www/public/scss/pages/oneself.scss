@@ -1,4 +1,4 @@
-.myself{
+.oneself{
 	width: 100%;
 	.banner{
 		width: 100%;
@@ -10,30 +10,31 @@
 			}
 		}
 	}
-	.sect{
+	.data{
 		width: 100%;
-		.my{
-			display: block;
+		height: 40px;
+		.text{
+			margin: 0 30px;
 			display: -webkit-box;
-			width:100%;
-			padding:0 30px;
-			border-bottom: 1px solid #eee;
-			span{
-				line-height: 40px;
+			label{
 				display: block;
-				color:#ccc;
-				&:nth-child(1){
-					-webkit-box-flex:1;
-				}
+				width: 30%;
+				line-height: 40px;
+			}
+			input{
+				display: block;
+				width: 60%;
+				text-align:justify;
+				padding-left: 50px;
 			}
 		}
 	}
-	.but{ 
+	.but{
 		width: 100px;
 		height: 40px;
-		margin: 50% 40%;
+		margin: 50% 38%;
 		border: 1px solid #ccc;
-		border-radius: 12px;
+		border-radius: 14px;
 		text-align: center;
 		background: orange;
 		a{
