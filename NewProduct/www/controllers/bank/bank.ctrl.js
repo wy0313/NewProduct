@@ -1,3 +1,61 @@
-angular.module("myApp").controller("bankCtrl",function(){
-	
+angular.module("myApp").controller("bankCtrl",function($scope){
+	$scope.list=[
+	{
+		year:"2001",
+		number:"100",
+		timer:"90"
+	},
+	{
+		year:"2002",
+		number:"98",
+		timer:"120"
+	},
+	{
+		year:"2003",
+		number:"93",
+		timer:"100"
+	},
+	{
+		year:"2004",
+		number:"0",
+		timer:"90"
+	},
+	{
+		year:"2005",
+		number:"10",
+		timer:"80"
+	},
+	{
+		year:"2006",
+		number:"90",
+		timer:"87"
+	},
+	{
+		year:"2007",
+		number:"100",
+		timer:"90"
+	}
+	],
+	$scope.nav=[
+		{
+			name:"历年<br/>真题"
+		},
+		{
+			name:"分科<br/>真题"
+		},
+		{
+			name:"模拟<br/>试卷"
+		},
+		{
+			name:"题海<br/>实战"
+		},
+		{
+			name:"主观题<br/>实训"
+		}
+	],
+	$scope.tab=function($index){
+		// eq($index)addClass("on").siblings().removeClass("on")
+		console.log($index)
+		
+	}
 })
