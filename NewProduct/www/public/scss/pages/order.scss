@@ -23,6 +23,9 @@
 				span{
 					padding:0 5px;
 					color: #999;
+					&.on{
+						color: red;
+					}
 				}
 			}
 		}

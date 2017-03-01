@@ -382,3 +382,5 @@ body, html {
         .content .con .right p span {
           padding: 0 5px;
           color: #999; }
+          .content .con .right p span.on {
+            color: red; }
