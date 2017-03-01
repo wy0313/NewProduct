@@ -23,7 +23,7 @@ angular.module("myApp").config(function($stateProvider,$urlRouterProvider){
 		templateUrl:"./controllers/myself/myself.html",
 		controller:"myselfCtrl"
 	})
-	
+
 	.state("news",{
 		url:"/news",
 		templateUrl:"./controllers/myself/oneself/news.html",
@@ -57,7 +57,7 @@ angular.module("myApp").config(function($stateProvider,$urlRouterProvider){
 	})
 		.state("content",{
 			url:"/content",
-			templateUrl:"./controllers/course.content/content.html",
+			templateUrl:"./controllers/course/content/content.html",
 			controller:"contentCtrl"
 		})
 })
