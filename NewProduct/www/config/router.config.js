@@ -1,7 +1,7 @@
 angular.module("myApp").config(function($stateProvider,$urlRouterProvider){
 	
 	$urlRouterProvider.when("", "/index");
-     
+    // $urlRouterProvider.when("/bank","/bank/bank/history")
 	$stateProvider
 	.state("index",{
 		url:"/index",
@@ -13,6 +13,31 @@ angular.module("myApp").config(function($stateProvider,$urlRouterProvider){
 		templateUrl:"./controllers/bank/bank.html",
 		controller:"bankCtrl"
 	})
+	.state("bank.history",{
+		url:"/bank/history",
+		templateUrl:"./controllers/bank/history.html",
+		controller:"historyCtrl"
+	})
+	.state("bank.branch",{
+		url:"/bank/branch",
+		templateUrl:"./controllers/bank/branch.html",
+		controller:"branchCtrl"
+	})
+	.state("bank.main",{
+		url:"/bank/main",
+		templateUrl:"./controllers/bank/main.html",
+		controller:"mainCtrl"
+	})
+	.state("bank.simulation",{
+		url:"/bank/simulation",
+		templateUrl:"./controllers/bank/simulation.html",
+		controller:"simulationCtrl"
+	})
+	.state("bank.stream",{
+		url:"/bank/stream",
+		templateUrl:"./controllers/bank/stream.html",
+		controller:"streamCtrl"
+	})
 	.state("know",{
 		url:"/know",
 		templateUrl:"./controllers/know/know.html",
@@ -23,7 +48,6 @@ angular.module("myApp").config(function($stateProvider,$urlRouterProvider){
 		templateUrl:"./controllers/myself/myself.html",
 		controller:"myselfCtrl"
 	})
-	
 	.state("news",{
 		url:"/news",
 		templateUrl:"./controllers/myself/oneself/news.html",
@@ -39,6 +63,7 @@ angular.module("myApp").config(function($stateProvider,$urlRouterProvider){
 				templateUrl:"./controllers/myself/oneself/mynotes.html",
 				controller:"mynotesCtrl"
 			})
+
 		.state("comment",{
 			url:"/comment",
 			templateUrl:"./controllers/myself/oneself/comment.html",
@@ -60,4 +85,11 @@ angular.module("myApp").config(function($stateProvider,$urlRouterProvider){
 			templateUrl:"./controllers/course/content/content.html",
 			controller:"contentCtrl"
 		})
+
+	
+	.state("order",{
+		url:"/order",
+		templateUrl:"./controllers/myself/order/order.html",
+		controller:"orderCtrl"
+	})
 })
