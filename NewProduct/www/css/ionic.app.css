@@ -481,11 +481,13 @@ body, html {
         position: relative;
         width: 50px;
         height: 50px;
-        display: block; }
+        display: block;
+        padding-right: 10px; }
         .content aside a .ll span {
           position: absolute;
           top: 50%;
-          margin-top: -25%; }
+          margin-top: -25%;
+          display: inline-block; }
   .content p {
     margin-top: 10px;
     line-height: 20px;
@@ -510,3 +512,75 @@ body, html {
     color: #fff;
     border: none;
     font-size: 18px; }
+
+#duan {
+  margin-top: 20px;
+  width: 100%; }
+  #duan .hang {
+    width: 100%;
+    display: -webkit-box;
+    border-bottom: 1px solid #EEEEEE; }
+    #duan .hang dt {
+      width: 70px;
+      padding: 10px 0;
+      display: -webkit-box;
+      -webkit-box-pack: center;
+      -webkit-box-align: center;
+      padding-right: 10px; }
+      #duan .hang dt img {
+        display: block;
+        width: 100%; }
+    #duan .hang dd {
+      -webkit-box-flex: 1;
+      padding-left: 0;
+      box-sizing: border-box;
+      display: -webkit-box;
+      -webkit-box-pack: center;
+      -webkit-box-align: center; }
+      #duan .hang dd aside {
+        display: -webkit-box;
+        -webkit-box-pack: justify;
+        width: 100%;
+        padding-right: 10px; }
+        #duan .hang dd aside a {
+          display: block;
+          color: #666;
+          font-size: 12px; }
+        #duan .hang dd aside .marey {
+          color: #FA6702; }
+
+#duan {
+  margin-top: 20px;
+  width: 100%; }
+  #duan .hang {
+    width: 100%;
+    display: -webkit-box;
+    border-bottom: 1px solid #EEEEEE; }
+    #duan .hang dt {
+      width: 70px;
+      padding: 10px 0;
+      display: -webkit-box;
+      -webkit-box-pack: center;
+      -webkit-box-align: center;
+      padding-right: 10px; }
+      #duan .hang dt img {
+        display: block;
+        width: 100%; }
+    #duan .hang dd {
+      -webkit-box-flex: 1;
+      padding-left: 0;
+      box-sizing: border-box;
+      display: -webkit-box;
+      -webkit-box-pack: center;
+      -webkit-box-align: center; }
+      #duan .hang dd aside {
+        display: -webkit-box;
+        -webkit-box-pack: justify;
+        width: 100%;
+        padding-right: 10px; }
+        #duan .hang dd aside a {
+          display: block;
+          color: #666;
+          font-size: 12px; }
+        #duan .hang dd aside .marey {
+          color: #FA6702; }
