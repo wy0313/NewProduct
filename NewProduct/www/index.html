@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title></title>
-
+    <link rel="stylesheet" href="./public/css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="manifest" href="manifest.json">
+     <link href="lib/css/slidingTabs.css" rel="stylesheet">
 
     <!-- un-comment this code to enable service worker
     <script>
@@ -16,18 +17,20 @@
       }
     </script>-->
 
-
+    
     <!-- css -->
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link rel="stylesheet" href="css/ionic.app.css">
     <link rel="stylesheet" href="css/reset.css">
 
-    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above -->
     <link href="css/ionic.app.css" rel="stylesheet">
-    -->
+   
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/js/slidingTabsDirective.js"></script>
+
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
@@ -37,7 +40,7 @@
 
     <script src="index.js"></script>
     <script src="config/router.config.js"></script>
-
+     <script src="filter/toTrusted.js"></script>
     <!-- 组件 -->
     <script src="components/header/header.directive.js"></script>
     <script src="components/footer/footer.directive.js"></script>
@@ -45,7 +48,12 @@
     <!-- 页面 -->
     <script src="controllers/index/index.ctrl.js"></script>
     <script src="controllers/bank/bank.ctrl.js"></script>
-    <script src='controllers/know/know.ctrl.js'></script>
+    <script src="controllers/bank/branch.ctrl.js"></script>
+    <script src="controllers/bank/main.ctrl.js"></script>
+    <script src="controllers/bank/history.ctrl.js"></script>
+    <script src="controllers/bank/simulation.ctrl.js"></script>
+    <script src='controllers/bank/stream.ctrl.js'></script>
+    <script src="controllers/know/know.ctrl.js"></script>
     <script src="controllers/myself/myself.ctrl.js"></script>
 
   </head>
