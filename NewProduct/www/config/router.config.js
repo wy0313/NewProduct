@@ -28,4 +28,14 @@ angular.module("myApp").config(function($stateProvider,$urlRouterProvider){
 		templateUrl:"./controllers/myself/oneself/oneself.html",
 		controller:"oneselfCtrl"
 	})
+	.state("twoself",{
+		url:"/twoself",
+		templateUrl:"./controllers/myself/twoself/twoself.html",
+		controller:"twoselfCtrl"
+	})
+	.state("order",{
+		url:"/order",
+		templateUrl:"./controllers/myself/order/order.html",
+		controller:"orderCtrl"
+	})
 })
