@@ -23,4 +23,20 @@ angular.module("myApp").config(function($stateProvider,$urlRouterProvider){
 		templateUrl:"./controllers/myself/myself.html",
 		controller:"myselfCtrl"
 	})
+	.state("news",{
+		url:"/news",
+		templateUrl:"./controllers/myself/oneself/news.html",
+		controller:"newsCtrl"
+	})
+	.state("notes",{
+		url:"/notes",
+		templateUrl:"./controllers/myself/oneself/notes.html",
+		controller:"notesCtrl"
+	})
+	.state("comment",{
+		url:"/comment",
+		templateUrl:"./controllers/myself/oneself/comment.html",
+		controller:"commentCtrl"
+	})
+
 })

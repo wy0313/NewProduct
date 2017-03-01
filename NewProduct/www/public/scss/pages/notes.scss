@@ -1,0 +1,44 @@
+.notes-list{
+	div{
+		font-size: 12px;
+		display: -webkit-box;
+		-webkit-box-pack:justify;
+		b,span{
+			display: block;
+			padding:0 10px;
+		}
+	}
+	a{
+		display: block;
+		font-size: 12px;
+		display: -webkit-box;
+		-webkit-box-pack:justify;
+		>i{
+			width: 70%;
+			display: block;
+			display: -webkit-box;
+			padding:0 10px;
+			b{
+				width: 70%;
+				font-weight: normal;
+				display:block;
+				white-space:nowrap; 
+				overflow:hidden; 
+				text-overflow:ellipsis;
+			}
+			span{
+				display: block;
+			}
+		}
+		>span{
+			width: 30%;
+			color:#faa95e;
+			display: block;
+			padding:0 10px;
+			text-align: right;
+			i{
+				margin-left: 10px;
+			}
+		}
+	}
+}
