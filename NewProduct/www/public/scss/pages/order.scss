@@ -17,12 +17,16 @@
 		}
 		.right{
 			-webkit-box-flex:1;
-			text-align: right;margin: 10px 30px;
+			text-align: right;
+			margin: 10px 30px;
 			p{
 				padding-top: 10px;
 				span{
 					padding:0 5px;
 					color: #999;
+					&.on{
+						color: red;
+					}
 				}
 			}
 		}

@@ -48,34 +48,49 @@ angular.module("myApp").config(function($stateProvider,$urlRouterProvider){
 		templateUrl:"./controllers/myself/myself.html",
 		controller:"myselfCtrl"
 	})
-	.state("news",{
-		url:"/news",
-		templateUrl:"./controllers/myself/oneself/news.html",
-		controller:"newsCtrl"
-	})
+		.state("news",{
+			url:"/myself/news",
+			templateUrl:"./controllers/myself/oneself/news.html",
+			controller:"newsCtrl"
+		})
 		.state("notes",{
-			url:"/notes",
+			url:"/myself/notes",
 			templateUrl:"./controllers/myself/oneself/notes.html",
 			controller:"notesCtrl"
 		})
-			.state("mynotes",{
-				url:"/mynotes",
+			.state("notes.mynotes",{
+				url:"/notes/mynotes",
 				templateUrl:"./controllers/myself/oneself/mynotes.html",
 				controller:"mynotesCtrl"
 			})
-	.state("comment",{
-		url:"/comment",
-		templateUrl:"./controllers/myself/oneself/comment.html",
-		controller:"commentCtrl"
+
+		.state("comment",{
+			url:"/myself/comment",
+			templateUrl:"./controllers/myself/oneself/comment.html",
+			controller:"commentCtrl"
+		})
+		.state("oneself",{
+			url:"/myself/oneself",
+			templateUrl:"./controllers/myself/oneself/oneself.html",
+			controller:"oneselfCtrl"
+		})
+		.state("order",{
+			url:"/myself/order",
+			templateUrl:"./controllers/myself/order/order.html",
+			controller:"orderCtrl"
+		})
+
+	.state("course",{
+		url:"/course",
+		templateUrl:"./controllers/course/course.html",
+		controller:"courseCtrl"
 	})
-	.state("oneself",{
-		url:"/oneself",
-		templateUrl:"./controllers/myself/oneself/oneself.html",
-		controller:"oneselfCtrl"
-	})
-	.state("order",{
-		url:"/order",
-		templateUrl:"./controllers/myself/order/order.html",
-		controller:"orderCtrl"
-	})
+		.state("content",{
+			url:"/course/content",
+			templateUrl:"./controllers/course/content/content.html",
+			controller:"contentCtrl"
+		})
+
+	
+	
 })
