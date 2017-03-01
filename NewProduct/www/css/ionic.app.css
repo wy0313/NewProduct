@@ -80,6 +80,96 @@ body, html {
       display: block;
       font-weight: normal; }
 
+.bank_main {
+  width: 100%;
+  margin-top: 44px; }
+  .bank_main .bank_nav1 {
+    width: 100%;
+    height: 46px;
+    background: #fff; }
+    .bank_main .bank_nav1 ul {
+      height: 46px;
+      display: -webkit-box;
+      -webkit-box-align: center;
+      -webkit-box-pack: center; }
+      .bank_main .bank_nav1 ul li {
+        height: 46px;
+        line-height: 46px;
+        font-size: 0.12rem;
+        -webkit-box-flex: 1;
+        text-align: center; }
+        .bank_main .bank_nav1 ul li.over {
+          border-bottom: 1px solid #ff9a00; }
+        .bank_main .bank_nav1 ul li a {
+          color: #000; }
+        .bank_main .bank_nav1 ul li.on a {
+          color: #ff9a00; }
+  .bank_main .bank_nav2 {
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    background: #fff; }
+    .bank_main .bank_nav2 ul {
+      box-sizing: border-box;
+      padding: 8px 0;
+      display: -webkit-box;
+      -webkit-box-align: center;
+      -webkit-box-pack: justify; }
+      .bank_main .bank_nav2 ul li {
+        margin-right: 2px;
+        font-size: 0.12rem;
+        border: 1px solid #ccc;
+        margin: 5px;
+        display: -webkit-box;
+        -webkit-box-align: center;
+        -webkit-box-pack: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px; }
+        .bank_main .bank_nav2 ul li a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          border-radius: 100%;
+          color: #000;
+          text-align: center; }
+          .bank_main .bank_nav2 ul li a.on {
+            background: #ff9a00;
+            color: #fff; }
+  .bank_main .bank_list {
+    width: 100%;
+    background: #fff; }
+    .bank_main .bank_list ul {
+      width: 100%;
+      padding: 0 10px; }
+      .bank_main .bank_list ul li {
+        border-top: 1px solid #ebebeb;
+        height: 38px;
+        display: -webkit-box;
+        -webkit-box-align: center;
+        -webkit-box-pack: justify; }
+        .bank_main .bank_list ul li span {
+          display: block;
+          font-size: 10px; }
+        .bank_main .bank_list ul li aside {
+          width: 35%;
+          display: block;
+          display: -webkit-box;
+          -webkit-box-align: center;
+          -webkit-box-pack: justify;
+          color: #595959; }
+          .bank_main .bank_list ul li aside p {
+            display: -webkit-box;
+            -webkit-box-align: center;
+            -webkit-box-pack: center;
+            width: 30px; }
+            .bank_main .bank_list ul li aside p.left {
+              padding-left: 15px; }
+            .bank_main .bank_list ul li aside p .clock {
+              padding-right: 2px; }
+            .bank_main .bank_list ul li aside p .icon {
+              color: #ff9a00; }
+
 .myself {
   width: 100%; }
   .myself .banner {
@@ -268,3 +358,27 @@ body, html {
     .oneself .but a {
       line-height: 40px;
       color: #fff; }
+
+.content {
+  width: 100%; }
+  .content .con {
+    display: -webkit-box;
+    border-bottom: 1px solid #ccc; }
+    .content .con .left {
+      -webkit-box-flex: 1;
+      margin: 10px 30px; }
+      .content .con .left h3 {
+        padding-top: 10px;
+        color: #666; }
+      .content .con .left p {
+        padding-top: 10px;
+        color: #999; }
+    .content .con .right {
+      -webkit-box-flex: 1;
+      text-align: right;
+      margin: 0 30px; }
+      .content .con .right p {
+        padding-top: 10px; }
+        .content .con .right p span {
+          padding: 0 5px;
+          color: #999; }
