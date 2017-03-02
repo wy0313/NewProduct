@@ -1,6 +1,11 @@
 angular.module("myApp").config(function($stateProvider,$urlRouterProvider){
 	
-	$urlRouterProvider.when("", "/index");
+
+	if ( window.localStorage['user']) {
+    	$urlRouterProvider.when("", "/index");
+    }else{
+    	$urlRouterProvider.when("", "/login");
+    }
 
 	$stateProvider
 	.state("index",{
@@ -39,33 +44,58 @@ angular.module("myApp").config(function($stateProvider,$urlRouterProvider){
 		controller:"myselfCtrl"
 	})
 	.state("news",{
-		url:"/news",
+		url:"/myself/news",
 		templateUrl:"./controllers/myself/oneself/news.html",
 		controller:"newsCtrl"
 	})
-		.state("notes",{
-			url:"/notes",
-			templateUrl:"./controllers/myself/oneself/notes.html",
-			controller:"notesCtrl"
-		})
-			.state("mynotes",{
-				url:"/mynotes",
-				templateUrl:"./controllers/myself/oneself/mynotes.html",
-				controller:"mynotesCtrl"
-			})
+	.state("notes",{
+		url:"/myself/notes",
+		templateUrl:"./controllers/myself/oneself/notes.html",
+		controller:"notesCtrl"
+	})
+	.state("notes.mynotes",{
+		url:"/notes/mynotes",
+		templateUrl:"./controllers/myself/oneself/mynotes.html",
+		controller:"mynotesCtrl"
+	})
+
 	.state("comment",{
-		url:"/comment",
+		url:"/myself/comment",
 		templateUrl:"./controllers/myself/oneself/comment.html",
 		controller:"commentCtrl"
 	})
 	.state("oneself",{
-		url:"/oneself",
+		url:"/myself/oneself",
 		templateUrl:"./controllers/myself/oneself/oneself.html",
 		controller:"oneselfCtrl"
 	})
 	.state("order",{
-		url:"/order",
+		url:"/myself/order",
 		templateUrl:"./controllers/myself/order/order.html",
 		controller:"orderCtrl"
 	})
+	.state("tuichu",{
+		url:"/tuichu",
+		templateUrl:"./controllers/myself/tuichu/tuichu.html",
+		controller:"tuichuCtrl"
+	})
+
+	.state("course",{
+		url:"/course",
+		templateUrl:"./controllers/course/course.html",
+		controller:"courseCtrl"
+	})
+		.state("content",{
+			url:"/course/content",
+			params:{"cateId":null},
+			templateUrl:"./controllers/course/content/content.html",
+			controller:"contentCtrl"
+		})
+	
+	.state("login",{
+		url:"/login",
+		templateUrl:"./controllers/login/login.html",
+		controller:"loginCtrl"
+	})
+	
 })
