@@ -16,10 +16,5 @@ var app=angular.module("myApp",["ionic"])
     }
   });
 
-app.filter('toTrusted', function ($sce) {
-  return function (text) {
-      return $sce.trustAsHtml(text);
-  };
-});
 
 })

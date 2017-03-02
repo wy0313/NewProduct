@@ -1,12 +1,13 @@
-<ion-view title="知识点-中律教育">
+<ion-view title="知识点-中律教育" hide-back-button="true">
     <ion-content class="k-nn" ng-controller="knowCtrl">
        <div class="k-cha">
-          <p>
-            <input type="text" placeholder="请输入关键字">
-            <i class="ion-search">f</i>  
+         <p>
+          <input type="text" placeholder="请输入关键字" ng-click="s=true">
+            <i class="ion-search"></i>  
           </p>
+          <span ng-click="s=false" ng-show="s">取消</span>
        </div>
-        <div class="k-div" ng-repeat=" x in quan ">
+        <div class="k-div" ng-repeat=" x in quan " ng-show="!s">
             <h4>{{ x.name }}</h4>
             <ul class="k-dul">
                 <li class="u-li" ng-repeat=" a in x.biao ">
@@ -22,4 +23,5 @@
             </ul>
         </div>
     </ion-content>
+    <foot-directive></foot-directive>
 </ion-view>

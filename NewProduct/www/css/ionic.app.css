@@ -170,6 +170,82 @@ body, html {
             .bank_main .bank_list ul li aside p .icon {
               color: #ff9a00; }
 
+.k-nn {
+  margin-bottom: 50px; }
+
+.k-cha {
+  width: 100%;
+  height: 60px;
+  background: #f8f8f8;
+  padding-top: 15px;
+  display: flex; }
+  .k-cha p {
+    width: 80%;
+    margin-left: 7%;
+    margin-right: 7%;
+    height: 30px;
+    flex: 1;
+    background: #fff;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    display: flex;
+    overflow: hidden; }
+    .k-cha p input {
+      flex: 1;
+      padding-left: 20px;
+      height: 30px; }
+    .k-cha p i {
+      margin-right: 20px;
+      margin-left: 20px;
+      font-size: 20px;
+      line-height: 30px; }
+  .k-cha span {
+    display: block;
+    width: 20%;
+    height: 30px;
+    background: orange;
+    border-radius: 15px;
+    margin-right: 3%;
+    color: #fff;
+    text-align: center;
+    line-height: 30px; }
+
+.k-div {
+  width: 100%; }
+  .k-div h4 {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px; }
+  .k-div .k-dul {
+    width: 100%; }
+    .k-div .k-dul li {
+      width: 100%; }
+      .k-div .k-dul li p {
+        width: 100%;
+        height: 45px;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #f8f8f8;
+        line-height: 45px;
+        padding-left: 50px;
+        font-size: 12px; }
+        .k-div .k-dul li p i {
+          float: right;
+          margin-right: 35px; }
+      .k-div .k-dul li a {
+        display: block;
+        color: #000;
+        font-size: 12px;
+        padding: 10px 0 0 50px; }
+        .k-div .k-dul li a:last-child {
+          padding-bottom: 10px; }
+        .k-div .k-dul li a span {
+          float: right;
+          margin-right: 35px; }
+          .k-div .k-dul li a span i {
+            margin-left: 5px; }
+
 .myself {
   width: 100%; }
   .myself .banner {
@@ -394,7 +470,8 @@ body, html {
     display: -webkit-box;
     -webkit-box-align: center;
     background: #fff;
-    border-bottom: 1px solid #EEEEEE; }
+    border-bottom: 1px solid #EEEEEE;
+    -webkit-box-pack: center; }
     .course nav a {
       display: block;
       font-size: 12px;
@@ -403,12 +480,17 @@ body, html {
       border-radius: 50px;
       width: 50px;
       height: 50px;
+      margin: 10px;
       display: -webkit-box;
       -webkit-box-align: center;
       -webkit-box-pack: center;
-      margin: 10px;
       color: #9A9A9A; }
       .course nav a.on {
+        background: #FD9A00;
+        font-weight: bolder;
+        color: #fff;
+        border: none; }
+      .course nav a :first-child.on {
         background: #FD9A00;
         font-weight: bolder;
         color: #fff;
@@ -463,17 +545,17 @@ body, html {
     width: 100%;
     padding-right: 10px;
     font-size: 14px; }
-    .content aside a {
+    .content aside > a {
       display: block;
       display: -webkit-box;
       color: #666;
       font-size: 12px;
       -webkit-box-align: center; }
-      .content aside a i {
+      .content aside > a i {
         display: block;
         font-size: 14px;
         margin-right: 10px; }
-      .content aside a .ll {
+      .content aside > a .ll {
         background: #FD9A00;
         padding: 10px;
         border-radius: 100px;
@@ -484,11 +566,11 @@ body, html {
         height: 50px;
         display: block;
         padding-right: 10px; }
-        .content aside a .ll span {
+        .content aside > a .ll span {
           position: absolute;
           top: 50%;
-          margin-top: -25%;
-          display: inline-block; }
+          margin-top: -18%;
+          left: 7%; }
   .content p {
     margin-top: 10px;
     line-height: 20px;
@@ -513,3 +595,38 @@ body, html {
     color: #fff;
     border: none;
     font-size: 18px; }
+
+.tuichuye {
+  width: 100%;
+  position: relative; }
+  .tuichuye .zhonglv {
+    position: absolute;
+    top: 270px;
+    left: 130px; }
+    .tuichuye .zhonglv a {
+      display: block;
+      width: 150px;
+      height: 40px;
+      border: 1px solid pink;
+      color: #999;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 15px;
+      font-size: 18px; }
+  .tuichuye .biaoti {
+    position: absolute;
+    top: 320px;
+    left: 115px;
+    font-size: 50px; }
+    .tuichuye .biaoti h2 {
+      color: orange; }
+  .tuichuye .jsj {
+    position: absolute;
+    top: 420px;
+    left: 80px; }
+    .tuichuye .jsj ul {
+      display: -webkit-box; }
+      .tuichuye .jsj ul li {
+        padding: 0 25px;
+        font-size: 18px;
+        color: #ccc; }

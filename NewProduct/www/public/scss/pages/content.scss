@@ -16,7 +16,7 @@
 		width: 100%;
 		padding-right: 10px;
 		font-size:14px;
-		a{
+		>a{
 			display: block;
 			display: -webkit-box;
 			color: #666;
@@ -43,8 +43,8 @@
 				span{
 					position: absolute;
 					top: 50%;
-					margin-top: -25%;
-					display:inline-block;
+					margin-top: -18%;
+					left:7%;
 
 				}
 			}

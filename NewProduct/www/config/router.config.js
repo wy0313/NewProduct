@@ -1,7 +1,7 @@
 angular.module("myApp").config(function($stateProvider,$urlRouterProvider){
 	
 	$urlRouterProvider.when("", "/index");
-    // $urlRouterProvider.when("/bank","/bank/bank/history")
+
 	$stateProvider
 	.state("index",{
 		url:"/index",
@@ -48,37 +48,42 @@ angular.module("myApp").config(function($stateProvider,$urlRouterProvider){
 		templateUrl:"./controllers/myself/myself.html",
 		controller:"myselfCtrl"
 	})
-		.state("news",{
-			url:"/myself/news",
-			templateUrl:"./controllers/myself/oneself/news.html",
-			controller:"newsCtrl"
-		})
-		.state("notes",{
-			url:"/myself/notes",
-			templateUrl:"./controllers/myself/oneself/notes.html",
-			controller:"notesCtrl"
-		})
-			.state("notes.mynotes",{
-				url:"/notes/mynotes",
-				templateUrl:"./controllers/myself/oneself/mynotes.html",
-				controller:"mynotesCtrl"
-			})
+	.state("news",{
+		url:"/myself/news",
+		templateUrl:"./controllers/myself/oneself/news.html",
+		controller:"newsCtrl"
+	})
+	.state("notes",{
+		url:"/myself/notes",
+		templateUrl:"./controllers/myself/oneself/notes.html",
+		controller:"notesCtrl"
+	})
+	.state("notes.mynotes",{
+		url:"/notes/mynotes",
+		templateUrl:"./controllers/myself/oneself/mynotes.html",
+		controller:"mynotesCtrl"
+	})
 
-		.state("comment",{
-			url:"/myself/comment",
-			templateUrl:"./controllers/myself/oneself/comment.html",
-			controller:"commentCtrl"
-		})
-		.state("oneself",{
-			url:"/myself/oneself",
-			templateUrl:"./controllers/myself/oneself/oneself.html",
-			controller:"oneselfCtrl"
-		})
-		.state("order",{
-			url:"/myself/order",
-			templateUrl:"./controllers/myself/order/order.html",
-			controller:"orderCtrl"
-		})
+	.state("comment",{
+		url:"/myself/comment",
+		templateUrl:"./controllers/myself/oneself/comment.html",
+		controller:"commentCtrl"
+	})
+	.state("oneself",{
+		url:"/myself/oneself",
+		templateUrl:"./controllers/myself/oneself/oneself.html",
+		controller:"oneselfCtrl"
+	})
+	.state("order",{
+		url:"/myself/order",
+		templateUrl:"./controllers/myself/order/order.html",
+		controller:"orderCtrl"
+	})
+	.state("tuichu",{
+		url:"/tuichu",
+		templateUrl:"./controllers/myself/tuichu/tuichu.html",
+		controller:"tuichuCtrl"
+	})
 
 	.state("course",{
 		url:"/course",
@@ -91,7 +96,7 @@ angular.module("myApp").config(function($stateProvider,$urlRouterProvider){
 			templateUrl:"./controllers/course/content/content.html",
 			controller:"contentCtrl"
 		})
-
+	
 	
 	
 })
