@@ -370,19 +370,17 @@ body, html {
         padding-top: 10px;
         color: #666; }
       .content .con .left p {
-        padding-top: 10px;
         color: #999; }
     .content .con .right {
       -webkit-box-flex: 1;
       text-align: right;
       margin: 10px 30px; }
-      .content .con .right p {
-        padding-top: 10px; }
-        .content .con .right p span {
-          padding: 0 5px;
-          color: #999; }
-          .content .con .right p span.on {
-            color: red; }
+      .content .con .right p span {
+        padding-top: 10px;
+        padding: 0 5px;
+        color: #999; }
+        .content .con .right p span.on {
+          color: red; }
 
 .course {
   width: 100%;

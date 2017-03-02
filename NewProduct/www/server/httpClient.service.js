@@ -10,7 +10,6 @@ angular.module('law.app').factory('httpClient',["$http",'$ionicLoading',function
         tmp = tmp.substr(0, 10);
         return tmp;
     }
-  
     var _sendRequest = function (options,successCallback,errorCallback) {
         var ts = timest();
 
