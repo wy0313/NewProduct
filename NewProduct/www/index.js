@@ -15,4 +15,6 @@ var app=angular.module("myApp",["ionic"])
       StatusBar.styleDefault();
     }
   });
+
+
 })

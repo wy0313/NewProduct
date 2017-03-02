@@ -1,7 +1,7 @@
 angular.module("myApp").config(function($stateProvider,$urlRouterProvider){
 	
 	$urlRouterProvider.when("", "/index");
-    // $urlRouterProvider.when("/bank","/bank/bank/history")
+
 	$stateProvider
 	.state("index",{
 		url:"/index",
@@ -79,33 +79,24 @@ angular.module("myApp").config(function($stateProvider,$urlRouterProvider){
 		templateUrl:"./controllers/myself/order/order.html",
 		controller:"orderCtrl"
 	})
-
-	.state("course",{
-		url:"/course",
-		templateUrl:"./controllers/course/course.html",
-		controller:"courseCtrl"
-	})
-	.state("course.skipone",{
-		url:"/course/skipone",
-		templateUrl:"./controllers/course/skipone.html",
-		controller:"skiponeCtrl"
-	})
-	.state("course.skiptwe",{
-		url:"/course/skiptwe",
-		templateUrl:"./controllers/course/skiptwe.html",
-		controller:"skiptweCtrl"
-	})
-	.state("content",{
-		url:"/course/content",
-		templateUrl:"./controllers/course/content/content.html",
-		controller:"contentCtrl"
-	})
 	.state("tuichu",{
 		url:"/tuichu",
 		templateUrl:"./controllers/myself/tuichu/tuichu.html",
 		controller:"tuichuCtrl"
 	})
 
+	.state("course",{
+		url:"/course",
+		templateUrl:"./controllers/course/course.html",
+		controller:"courseCtrl"
+	})
+		.state("content",{
+			url:"/course/content",
+			params:{"cateId":null},
+			templateUrl:"./controllers/course/content/content.html",
+			controller:"contentCtrl"
+		})
+	
 	
 	
 })
