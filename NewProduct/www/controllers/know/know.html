@@ -2,20 +2,18 @@
     <ion-content class="k-nn" ng-controller="knowCtrl">
        <div class="k-cha">
           <p>
-<<<<<<< HEAD
             <input type="text" placeholder="请输入关键字">
-            <i class="ion-search">f</i>  
+            <i class="ion-search"></i>  
           </p>
        </div>
         <div class="k-div" ng-repeat=" x in quan ">
-=======
+
             <input type="text" placeholder="请输入关键字" ng-click="s=true">
             <i class="ion-search"></i>  
           </p>
           <span ng-click="s=false" ng-show="s">取消</span>
        </div>
         <div class="k-div" ng-repeat=" x in quan " ng-show="!s">
->>>>>>> liu
             <h4>{{ x.name }}</h4>
             <ul class="k-dul">
                 <li class="u-li" ng-repeat=" a in x.biao ">
@@ -31,8 +29,5 @@
             </ul>
         </div>
     </ion-content>
-<<<<<<< HEAD
-=======
     <foot-directive></foot-directive>
->>>>>>> liu
 </ion-view>
