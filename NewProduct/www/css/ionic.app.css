@@ -583,3 +583,38 @@ body, html {
           font-size: 12px; }
         #duan .hang dd aside .marey {
           color: #FA6702; }
+
+.tuichuye {
+  width: 100%;
+  position: relative; }
+  .tuichuye .zhonglv {
+    position: absolute;
+    top: 270px;
+    left: 130px; }
+    .tuichuye .zhonglv a {
+      display: block;
+      width: 150px;
+      height: 40px;
+      border: 1px solid pink;
+      color: #999;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 15px;
+      font-size: 18px; }
+  .tuichuye .biaoti {
+    position: absolute;
+    top: 320px;
+    left: 115px;
+    font-size: 50px; }
+    .tuichuye .biaoti h2 {
+      color: orange; }
+  .tuichuye .jsj {
+    position: absolute;
+    top: 420px;
+    left: 80px; }
+    .tuichuye .jsj ul {
+      display: -webkit-box; }
+      .tuichuye .jsj ul li {
+        padding: 0 25px;
+        font-size: 18px;
+        color: #ccc; }

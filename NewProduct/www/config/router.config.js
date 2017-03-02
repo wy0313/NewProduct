@@ -48,58 +48,63 @@ angular.module("myApp").config(function($stateProvider,$urlRouterProvider){
 		templateUrl:"./controllers/myself/myself.html",
 		controller:"myselfCtrl"
 	})
-		.state("news",{
-			url:"/myself/news",
-			templateUrl:"./controllers/myself/oneself/news.html",
-			controller:"newsCtrl"
-		})
-		.state("notes",{
-			url:"/myself/notes",
-			templateUrl:"./controllers/myself/oneself/notes.html",
-			controller:"notesCtrl"
-		})
-			.state("notes.mynotes",{
-				url:"/notes/mynotes",
-				templateUrl:"./controllers/myself/oneself/mynotes.html",
-				controller:"mynotesCtrl"
-			})
+	.state("news",{
+		url:"/myself/news",
+		templateUrl:"./controllers/myself/oneself/news.html",
+		controller:"newsCtrl"
+	})
+	.state("notes",{
+		url:"/myself/notes",
+		templateUrl:"./controllers/myself/oneself/notes.html",
+		controller:"notesCtrl"
+	})
+	.state("notes.mynotes",{
+		url:"/notes/mynotes",
+		templateUrl:"./controllers/myself/oneself/mynotes.html",
+		controller:"mynotesCtrl"
+	})
 
-		.state("comment",{
-			url:"/myself/comment",
-			templateUrl:"./controllers/myself/oneself/comment.html",
-			controller:"commentCtrl"
-		})
-		.state("oneself",{
-			url:"/myself/oneself",
-			templateUrl:"./controllers/myself/oneself/oneself.html",
-			controller:"oneselfCtrl"
-		})
-		.state("order",{
-			url:"/myself/order",
-			templateUrl:"./controllers/myself/order/order.html",
-			controller:"orderCtrl"
-		})
+	.state("comment",{
+		url:"/myself/comment",
+		templateUrl:"./controllers/myself/oneself/comment.html",
+		controller:"commentCtrl"
+	})
+	.state("oneself",{
+		url:"/myself/oneself",
+		templateUrl:"./controllers/myself/oneself/oneself.html",
+		controller:"oneselfCtrl"
+	})
+	.state("order",{
+		url:"/myself/order",
+		templateUrl:"./controllers/myself/order/order.html",
+		controller:"orderCtrl"
+	})
 
 	.state("course",{
 		url:"/course",
 		templateUrl:"./controllers/course/course.html",
 		controller:"courseCtrl"
 	})
-		.state("course.skipone",{
-			url:"/course/skipone",
-			templateUrl:"./controllers/course/skipone.html",
-			controller:"skiponeCtrl"
-		})
-		.state("course.skiptwe",{
-			url:"/course/skiptwe",
-			templateUrl:"./controllers/course/skiptwe.html",
-			controller:"skiptweCtrl"
-		})
-		.state("content",{
-			url:"/course/content",
-			templateUrl:"./controllers/course/content/content.html",
-			controller:"contentCtrl"
-		})
+	.state("course.skipone",{
+		url:"/course/skipone",
+		templateUrl:"./controllers/course/skipone.html",
+		controller:"skiponeCtrl"
+	})
+	.state("course.skiptwe",{
+		url:"/course/skiptwe",
+		templateUrl:"./controllers/course/skiptwe.html",
+		controller:"skiptweCtrl"
+	})
+	.state("content",{
+		url:"/course/content",
+		templateUrl:"./controllers/course/content/content.html",
+		controller:"contentCtrl"
+	})
+	.state("tuichu",{
+		url:"/tuichu",
+		templateUrl:"./controllers/myself/tuichu/tuichu.html",
+		controller:"tuichuCtrl"
+	})
 
 	
 	
