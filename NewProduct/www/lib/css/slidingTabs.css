@@ -5,7 +5,9 @@ ion-slide {
 ion-slide:nth-child(2n) {
     background-color: #fff;
 }
-
+.has-header{
+    top:0;
+}
 .slider {
     height: 100%;
 }
