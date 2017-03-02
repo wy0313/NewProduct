@@ -1,14 +1,8 @@
 <ion-view title="知识点-中律教育">
     <ion-content class="k-nn" ng-controller="knowCtrl">
        <div class="k-cha">
-          <p>
-            <input type="text" placeholder="请输入关键字">
-            <i class="ion-search"></i>  
-          </p>
-       </div>
-        <div class="k-div" ng-repeat=" x in quan ">
-
-            <input type="text" placeholder="请输入关键字" ng-click="s=true">
+         <p>
+          <input type="text" placeholder="请输入关键字" ng-click="s=true">
             <i class="ion-search"></i>  
           </p>
           <span ng-click="s=false" ng-show="s">取消</span>
