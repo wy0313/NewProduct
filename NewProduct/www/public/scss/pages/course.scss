@@ -31,47 +31,48 @@
 	        }
         }
 	}
-	#duan{
-		div{
+	.duan{
+		a{
 			.hang{
-			width:100%;
-			display: -webkit-box;
-		    border-bottom: 1px solid #EEEEEE;
-		    dt{
-		    	width:70px;
-			    padding: 10px 0;
-			    display: -webkit-box;
-			    -webkit-box-pack: center;
-			    -webkit-box-align: center;
-			    padding-right:10px;
-			    img{
-			    	display: block;
-					width:100%;
-			    }
-		    }
-		    dd{
-		    	-webkit-box-flex: 1;
-			    padding-left: 0;
-			    box-sizing: border-box;
-			    display: -webkit-box;
-			    -webkit-box-pack: center;
-			    -webkit-box-align: center;
-			    aside{
+				width:100%;
+				display: -webkit-box;
+			    border-bottom: 1px solid #EEEEEE;
+			    dt{
+			    	width:70px;
+				    padding: 10px 0;
 				    display: -webkit-box;
-				    -webkit-box-pack: justify;
-				    width: 100%;
-				    padding-right: 10px;
-				    a{
+				    -webkit-box-pack: center;
+				    -webkit-box-align: center;
+				    padding-right:10px;
+				    img{
 				    	display: block;
-					    color: #666;
-					    font-size: 12px;
-				    }
-				    .marey{
-				    	color:#FA6702;
+						width:100%;
 				    }
 			    }
-		    }
-		}
+			    dd{
+			    	-webkit-box-flex: 1;
+				    padding-left: 0;
+				    box-sizing: border-box;
+				    display: -webkit-box;
+				    -webkit-box-pack: center;
+				    -webkit-box-align: center;
+				    aside{
+					    display: -webkit-box;
+					    -webkit-box-pack: justify;
+					    width: 100%;
+					    padding-right: 10px;
+					    b{
+					    	display: block;
+						    color: #666;
+						    font-size: 12px;
+					    }
+					    .marey{
+					    	color:#FA6702;
+					    	display: block;
+					    }
+				    }
+			    }
+			}
 		}
 	}
 

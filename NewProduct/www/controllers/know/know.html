@@ -10,14 +10,14 @@
             <h4>{{ x.name }}</h4>
             <ul class="k-dul">
                 <li class="u-li" ng-repeat=" a in x.biao ">
-                   <p ng-click="show=!show">
+                    <p ng-click="show=!show">
                         {{ a.name }}
                     <i class="ion-chevron-down"></i>
-                   </p>
-                   <a ng-repeat=" b in a.bian " ng-show="show">
+                    </p>
+                    <a ng-repeat=" b in a.bian " ng-show="show">
                         {{ b.name }}
                         <span>{{ b.ti }} <i class="ion-chevron-right"></i></span>
-                   </a>
+                    </a>
                 </li>
             </ul>
         </div>

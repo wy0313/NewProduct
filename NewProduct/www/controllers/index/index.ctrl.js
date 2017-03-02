@@ -1,7 +1,7 @@
-angular.module("myApp").controller("indexCtrl",function($scope){
+angular.module("myApp").controller("indexCtrl",function($scope,httpServer){
 
-	   $scope.ss='aaa'
-	   var swiper = new Swiper('.index-banner',{
+	   	$scope.ss='aaa'
+	   	var swiper = new Swiper('.index-banner',{
 		   	direction:"horizontal",
 		    pagination: '.swiper-pagination',
 		    paginationClickable: true,
@@ -11,4 +11,7 @@ angular.module("myApp").controller("indexCtrl",function($scope){
 	        autoplay: 2500,
 	        autoplayDisableOnInteraction: false
 		})
+
+		
+
 })

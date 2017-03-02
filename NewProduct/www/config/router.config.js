@@ -85,18 +85,9 @@ angular.module("myApp").config(function($stateProvider,$urlRouterProvider){
 		templateUrl:"./controllers/course/course.html",
 		controller:"courseCtrl"
 	})
-		.state("course.skipone",{
-			url:"/course/skipone",
-			templateUrl:"./controllers/course/skipone.html",
-			controller:"skiponeCtrl"
-		})
-		.state("course.skiptwe",{
-			url:"/course/skiptwe",
-			templateUrl:"./controllers/course/skiptwe.html",
-			controller:"skiptweCtrl"
-		})
 		.state("content",{
 			url:"/course/content",
+			params:{"cateId":null},
 			templateUrl:"./controllers/course/content/content.html",
 			controller:"contentCtrl"
 		})
