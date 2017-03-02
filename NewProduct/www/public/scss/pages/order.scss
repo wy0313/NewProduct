@@ -5,13 +5,13 @@
 		display: -webkit-box;
 		border-bottom: 1px solid #ccc;
 		.left{
-			-webkit-box-flex:1;
-			margin: 10px 30px;
+			-webkit-box-flex:1;margin: 10px 30px;
 			h3{
 				padding-top: 10px;
 				color: #666;
 			}
 			p{
+				padding-top: 10px;
 				color: #999;
 			}
 		}
@@ -20,9 +20,8 @@
 			text-align: right;
 			margin: 10px 30px;
 			p{
-				
+				padding-top: 10px;
 				span{
-					padding-top: 10px;
 					padding:0 5px;
 					color: #999;
 					&.on{

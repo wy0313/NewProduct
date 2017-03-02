@@ -1,6 +1,11 @@
 angular.module("myApp").config(function($stateProvider,$urlRouterProvider){
 	
-	$urlRouterProvider.when("", "/index");
+	if ( window.localStorage['user']) {
+    	$urlRouterProvider.when("", "/index");
+    }else{
+    	$urlRouterProvider.when("", "/login");
+    }
+
 
 	$stateProvider
 	.state("index",{
@@ -97,6 +102,10 @@ angular.module("myApp").config(function($stateProvider,$urlRouterProvider){
 			controller:"contentCtrl"
 		})
 	
-	
+	.state("login",{
+		url:"/login",
+		templateUrl:"./controllers/login/login.html",
+		controller:"loginCtrl"
+	})
 	
 })

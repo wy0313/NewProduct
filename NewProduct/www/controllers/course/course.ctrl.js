@@ -1,10 +1,10 @@
-angular.module("myApp").controller("courseCtrl",function($scope,httpServer){
-	httpServer.get("Course/GetCourseCategory",{user_id:"1"},function(data){
+angular.module("myApp").controller("courseCtrl",function($scope,userServer,courseServer){
+	userId = userServer.getUserId();
 	
-		$scope.title=data.data.RetValue;
-		
-	},function(){
-		
+	courseServer.getCourse({
+		user_id:userId,
+	},function(data){
+		$scope.title=data.RetValue;
 	})
 
 	$scope.getID=function(index){
@@ -14,19 +14,23 @@ angular.module("myApp").controller("courseCtrl",function($scope,httpServer){
 		for(var i=0;i<list.length;i++){
 			list[i].setAttribute("class","");
 		}
-		list[index].setAttribute("class","on")
+		list[index].setAttribute("class","on");
 		
 		add(id)
 	}	
 
 	function add(id){
-		httpServer.get("Course/GetCourseList",{user_id:"1",category_id:id,pagesize:"10",pageindex:"1"},function(data){
+		
+		courseServer.getList({
+			user_id:userId,
+			category_id:id,
+			pagesize:"10",
+			pageindex:"1"
+		},function(data){
 			
-			$scope.list=data.data.RetValue;
-
-		},function(){
+			$scope.list=data.RetValue;
 			
 		})
 	}
-	add(0)
+	add("84")
 })
