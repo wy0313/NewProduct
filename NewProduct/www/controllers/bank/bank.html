@@ -1,79 +1,44 @@
 <ion-view title="题库" hide-back-button="true">
-	<ion-contentd>
-		<div class="bank_main">
+<div class="bank_main">
+	<ion-content>
 		<ion-slide-box slide-tabs-scrollable="false"  show-pager="false" ion-slide-tabs >
-			 <ion-slide ion-slide-tab-label="司考">
+		 <ion-slide  ng-repeat="item in list1" ion-slide-tab-label="{{item.title}}" >
 			<div class="tab">
+
 				<div class="bank_nav2">
 					<ul>
-						<li><a  ui-sref="bank.history" ui-sref-active="on">历年<br/>真题</a></li>
-						<li><a  ui-sref="bank.branch" ui-sref-active="on">分科<br/>真题</a></li>
-						<li><a  ui-sref="bank.simulation" ui-sref-active="on">模拟<br/>试卷</a></li>
-						<li><a  ui-sref="bank.stream" ui-sref-active="on">题海<br/>实战</a></li>
-						<li><a  ui-sref="bank.main" ui-sref-active="on">主观题<br/>实训</a></li>
-						<!-- <li ng-repeat="item in nav" ng-click="tab($index)">
-							<a href="javascript:;" ng-bind-html="item.name|myFilter"></a>
-						</li> -->
-					</ul>
+						<li ng-repeat="item1 in item.data" ng-click="getClass($index)">
+							<a data-id={{item1.id}}  ng-click="getID($index)" class="content">{{item1.title}}</a>
+						</li>
+					</ul>	
 				</div>
 				<ion-scroll>
-				<div class="bank_list">
-				<div ui-view></div>				
-				</div> 
+					<div class="bank_list">
+						<ul>
+							<li ng-repeat="item in list2" ui-sref='score({id:item.id})'>
+								<a>
+									<span>{{item.title}}</span>
+									<aside>
+										<p>
+											<small>题数</small>
+											<span>{{item.count}}</span>
+										</p>
+										<p class="left">
+											<small class="fa fa-clock-o icon clock"></small>	
+											<span>{{item.exam_time}}</span>
+										</p>
+										<p class="fa fa-angle-right left"></p>
+									</aside>
+								</a>
+							</li>
+						</ul>		
+					</div> 
 				</ion-scroll>
 			</div>
-			</ion-slide>
-			<ion-slide ion-slide-tab-label="法硕">
-				<div class="tab">
-				<div class="bank_nav2">
-					<ul>
-						<li><a ui-sref="bank.history" ui-sref-active="on">历年<br/>真题</a></li>
-						<li><a ui-sref="bank.branch" ui-sref-active="on">分科<br/>真题</a></li>
-						<li><a ui-sref="bank.stream" ui-sref-active="on">考试<br/>分析</a></li>
-						<li><a ui-sref="bank.simulation" ui-sref-active="on">模拟<br/>试卷</a></li>
-					</ul>
-				</div>
-				<ion-scroll>
-				<div class="bank_list">
-				<div ui-view></div>
-				</div> 
-				</ion-scroll>
-			</div>
-	
-			</ion-slide>
-                <ion-slide ion-slide-tab-label="考研英语">
-					<div class="tab">
-				<div class="bank_nav2">
-					<ul>
-						<li><a  ui-sref="bank.history" ui-sref-active="on">历年<br/>真题</a></li>
-						<li><a  ui-sref="bank.branch" ui-sref-active="on">分科<br/>真题</a></li>
-						<li><a  ui-sref="bank.simulation" ui-sref-active="on">模拟<br/>试卷</a></li>
-					</ul>
-				</div>
-				<ion-scroll>
-				<div class="bank_list">
-					<div ui-view></div>
-				</div> 
-				</ion-scroll>
-			</div>
-                </ion-slide>
-                <ion-slide ion-slide-tab-label="考研政治">
-					<div class="tab">
-				<div class="bank_nav2">
-					<ul>
-						<li><a  ui-sref="bank.history" ui-sref-active="on">历年<br/>真题</a></li>
-						<li><a  ui-sref="bank.branch" ui-sref-active="on">分科<br/>真题</a></li>
-					</ul>
-				</div>
-				<ion-scroll>
-				<div class="bank_list">
-					<div ui-view></div>
-				</div> 
-				</ion-scroll>
-			</div>
-                </ion-slide>
-			</ion-slide-box>	
-		</div>
-	</ion-content>
+		</ion-slide>
+	</ion-slide-box>	
+		
+</ion-content>
+	</div>
 	<foot-directive></foot-directive>
 </ion-view>

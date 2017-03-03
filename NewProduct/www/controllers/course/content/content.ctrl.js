@@ -1,14 +1,13 @@
-angular.module("myApp").controller("contentCtrl",function($scope,httpServer,$stateParams){
+angular.module("myApp").controller("contentCtrl",function($scope,courseServer,userServer,$stateParams){
 	
-    httpServer.get("Course/GetCourseMain",{user_id:"1",id:$stateParams.cateId},
-    	function(data){
-			// console.log(data.data.RetValue)
-			$scope.detail=data.data.RetValue;
+	userId = userServer.getUserId();
 
-		},function(){
-			
-		}
-	)
+	courseServer.getDetail({
+		user_id:userId,
+		id:$stateParams.cateId
+	},function(data){
+		$scope.detail=data.RetValue;
+	})
 
 	 	
 })

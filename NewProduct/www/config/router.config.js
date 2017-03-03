@@ -1,6 +1,11 @@
 angular.module("myApp").config(function($stateProvider,$urlRouterProvider){
 	
-	$urlRouterProvider.when("", "/index");
+
+	if ( window.localStorage['user']) {
+    	$urlRouterProvider.when("", "/index");
+    }else{
+    	$urlRouterProvider.when("", "/login");
+    }
 
 	$stateProvider
 	.state("index",{
@@ -13,30 +18,20 @@ angular.module("myApp").config(function($stateProvider,$urlRouterProvider){
 		templateUrl:"./controllers/bank/bank.html",
 		controller:"bankCtrl"
 	})
-	.state("bank.history",{
-		url:"/bank/history",
-		templateUrl:"./controllers/bank/history.html",
-		controller:"historyCtrl"
+	.state("awser",{
+		url:"/awser/:id",
+		templateUrl:"./controllers/bank/awser.html",
+		controller:"awserCtrl"
 	})
-	.state("bank.branch",{
-		url:"/bank/branch",
-		templateUrl:"./controllers/bank/branch.html",
-		controller:"branchCtrl"
+	.state("score",{
+		url:"/score/:id",
+		templateUrl:"./controllers/bank/score.html",
+		controller:"scoreCtrl"
 	})
-	.state("bank.main",{
-		url:"/bank/main",
-		templateUrl:"./controllers/bank/main.html",
-		controller:"mainCtrl"
-	})
-	.state("bank.simulation",{
-		url:"/bank/simulation",
-		templateUrl:"./controllers/bank/simulation.html",
-		controller:"simulationCtrl"
-	})
-	.state("bank.stream",{
-		url:"/bank/stream",
-		templateUrl:"./controllers/bank/stream.html",
-		controller:"streamCtrl"
+	.state("law",{
+		url:"/law",
+		templateUrl:"./controllers/bank/law.html",
+		controller:"lawCtrl"
 	})
 	.state("know",{
 		url:"/know",
@@ -97,6 +92,10 @@ angular.module("myApp").config(function($stateProvider,$urlRouterProvider){
 			controller:"contentCtrl"
 		})
 	
-	
+	.state("login",{
+		url:"/login",
+		templateUrl:"./controllers/login/login.html",
+		controller:"loginCtrl"
+	})
 	
 })
