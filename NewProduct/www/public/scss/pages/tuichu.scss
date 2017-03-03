@@ -1,10 +1,11 @@
 .tuichuye{
 	width: 100%;
-	position: relative;
+	margin-top:50%;
+	display: -webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
 	.zhonglv{
-		position: absolute;
-		top: 270px;
-		left: 130px;
 		a{
 			display: block;
 			width: 150px;
@@ -15,21 +16,20 @@
 			line-height: 40px;
 			border-radius: 15px;
 			font-size: 18px;
+			margin: 10px;
 		}
 	}
 	.biaoti{
-		position: absolute;
-		top: 320px;
-		left: 115px;
 		font-size: 50px;
+		margin: 10px;
 		h2{
 			color: orange;
 		}
+			
 	}
 	.jsj{
-		position: absolute;
-		top: 420px;
-		left: 80px;
+
+			margin: 10px;
 		ul{
 			display: -webkit-box;
 			li{

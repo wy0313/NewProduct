@@ -372,7 +372,8 @@ body, html {
             margin-left: 5px; }
 
 .myself {
-  width: 100%; }
+  width: 100%;
+  position: relative; }
   .myself .banner {
     width: 100%; }
     .myself .banner a {
@@ -397,7 +398,10 @@ body, html {
   .myself .but {
     width: 100px;
     height: 40px;
-    margin: 50% 40%;
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    margin-left: -50px;
     border: 1px solid #ccc;
     border-radius: 12px;
     text-align: center;
@@ -615,11 +619,6 @@ body, html {
         font-weight: bolder;
         color: #fff;
         border: none; }
-      .course nav a :first-child.on {
-        background: #FD9A00;
-        font-weight: bolder;
-        color: #fff;
-        border: none; }
   .course .duan a .hang {
     width: 100%;
     display: -webkit-box;
@@ -723,32 +722,29 @@ body, html {
 
 .tuichuye {
   width: 100%;
-  position: relative; }
-  .tuichuye .zhonglv {
-    position: absolute;
-    top: 270px;
-    left: 130px; }
-    .tuichuye .zhonglv a {
-      display: block;
-      width: 150px;
-      height: 40px;
-      border: 1px solid pink;
-      color: #999;
-      text-align: center;
-      line-height: 40px;
-      border-radius: 15px;
-      font-size: 18px; }
+  margin-top: 50%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  -webkit-box-align: center; }
+  .tuichuye .zhonglv a {
+    display: block;
+    width: 150px;
+    height: 40px;
+    border: 1px solid pink;
+    color: #999;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 15px;
+    font-size: 18px;
+    margin: 10px; }
   .tuichuye .biaoti {
-    position: absolute;
-    top: 320px;
-    left: 115px;
-    font-size: 50px; }
+    font-size: 50px;
+    margin: 10px; }
     .tuichuye .biaoti h2 {
       color: orange; }
   .tuichuye .jsj {
-    position: absolute;
-    top: 420px;
-    left: 80px; }
+    margin: 10px; }
     .tuichuye .jsj ul {
       display: -webkit-box; }
       .tuichuye .jsj ul li {

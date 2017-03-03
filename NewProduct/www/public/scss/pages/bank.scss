@@ -7,52 +7,45 @@
 			li{
 				width: 100%;
 				a{		
-				border-top:1px solid #ebebeb;
-				height: 38px;
-				display: -webkit-box;
-				-webkit-box-align:center;
-				-webkit-box-pack:justify;
-				span{
-					display: block;
-					font-size:10px;
-					color: #333333;
-				}
-				aside{
-					width: 35%;
-					display: block;
+					border-top:1px solid #ebebeb;
+					height: 38px;
 					display: -webkit-box;
 					-webkit-box-align:center;
 					-webkit-box-pack:justify;
-					color:#595959;
-					p{
+					span{
+						display: block;
+						font-size:10px;
+						color: #333333;
+					}
+					aside{
+						width: 35%;
+						display: block;
 						display: -webkit-box;
 						-webkit-box-align:center;
-						-webkit-box-pack:center;
-						width: 30px;
-						&.left{
-							padding-left: 15px;
+						-webkit-box-pack:justify;
+						color:#595959;
+						p{
+							display: -webkit-box;
+							-webkit-box-align:center;
+							-webkit-box-pack:center;
+							width: 30px;
+							&.left{
+								padding-left: 15px;
+							}
+							.clock{
+								padding-right: 2px;
+							}
+							.icon{
+								color: #ff9a00;
+							}
 						}
-						.clock{
-							padding-right: 2px;
-						}
-						.icon{
-							color: #ff9a00;
-						}
-					}
 
+					}
 				}
 			}
-		}
 
-
-
-
-<<<<<<< HEAD
-
-=======
 		}
 	}
->>>>>>> jing
 .bank_main{
 	width: 100%;
 	margin-top: 44px;
@@ -174,8 +167,6 @@
 
 		}
 	}
-<<<<<<< HEAD
-=======
 }
 .score_btn{
 	width: 100%;
@@ -266,5 +257,4 @@
 		border-radius: 10px;
 		padding: 0 40px;
 	}
->>>>>>> jing
 }
