@@ -1,0 +1,28 @@
+<ion-view title="课程"  hide-back-button="true">
+    <ion-content>
+        <section class="course">        
+            <nav>
+               <a ng-repeat="item in title" data-id="{{item.id}}" ng-click="getID($index)"><b>{{item.title}}</b></a>
+            </nav>   
+            <div class="duan">
+                <a href="javascript:;" ui-sref="content({cateId:item.id})" ng-repeat="item in list">
+                    <dl class="hang">
+                        <dt><img src="http://119.10.11.121:8509//upload/201702/04/201702041353429232.jpg"></dt>
+                        <dd>
+                            <aside>
+                                <b>
+                                    <i>{{item.title}}</i><br>
+                                    <i>说明描述</i>
+                                </b>
+                                    
+                                <span class="marey">{{item.price}}</span>  
+                            </aside>
+                        </dd>
+                    </dl>
+                </a>
+            </div>                     
+        </section>  
+            
+    </ion-content>
+    <foot-directive></foot-directive>
+</ion-view>

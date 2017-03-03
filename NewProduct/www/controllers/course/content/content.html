@@ -1,0 +1,19 @@
+<ion-view title="课程详情">
+    <ion-content>
+      <section class="content">
+      	<div><img src="http://119.10.11.121:8509//upload/201702/04/201702041353429232.jpg"></div>
+		<aside>
+            <a href="javascript:;">
+            	{{detail.title}}
+            </a>
+            <a href="javascript:;" class="marey"><i>￥：</i><i class="ll"><span>{{detail.price}}</span></i></a>    
+        </aside>
+        <p ng-bind-html="detail.content"></p>
+      </section>
+      
+    </ion-content>
+
+    <footer class="foo">
+      	<button>购买</button>
+      </footer>
+</ion-view>

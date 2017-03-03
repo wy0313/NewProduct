@@ -1,0 +1,47 @@
+<ion-view title="司考-历年真题">
+	<ion-content>
+	<div>
+		<div class="score_nav">
+			<span>{{list.title}}</span>
+		</div>
+		<div class="count" ng-repeat="item in list.list">
+			<p>{{item.sort_id}}</p>
+		</div>  
+		<div class="score_list">
+			<!-- <ul>
+				<li>
+				
+					<a>1</a>
+					<a>2</a>
+					<a>3</a>
+					<a>4</a>
+					<a>5</a>
+					<a>6</a>
+					<a class="true">7</a>
+					<a>8</a>
+					<a>9</a>
+					<a>10</a>
+					<a>11</a>
+					<a>12</a>
+					<a class="false">13</a>
+					<a>14</a>
+					<a>15</a>
+					<a>16</a>
+					<a>17</a>
+					<a>18</a>
+					<a>19</a>
+					<a>20</a>
+					<a>21</a>
+					<a>22</a>
+				</li>
+			</ul> -->
+		</div>
+		<div class="score_btn" ng-repeat="item in list.list">
+			<button ui-sref="awser({id:item.id})">开始答题</button>
+		</div>
+	</div>
+		<div ui-view></div>
+			
+		
+	</ion-content>	
+</ion-view>	
