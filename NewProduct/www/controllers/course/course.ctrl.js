@@ -2,11 +2,16 @@ angular.module("myApp").controller("courseCtrl",function($scope,userServer,cours
 	userId = userServer.getUserId();
 	
 	courseServer.getCourse({
-		user_id:userId,
+
+		user_id:userId
+
 	},function(data){
+
 		$scope.title=data.RetValue;
+
 	})
 
+	
 	$scope.getID=function(index){
 
 		var list=document.querySelectorAll(".course nav a");
@@ -15,6 +20,7 @@ angular.module("myApp").controller("courseCtrl",function($scope,userServer,cours
 		for(var i=0;i<list.length;i++){
 			list[i].setAttribute("class","");
 		}
+		
 		list[index].setAttribute("class","on");
 		add(id)
 		
@@ -30,6 +36,7 @@ angular.module("myApp").controller("courseCtrl",function($scope,userServer,cours
 		},function(data){
 			
 			$scope.list=data.RetValue;
+			document.querySelectorAll(".course nav a")[0].className="on"
 			
 		})
 	}

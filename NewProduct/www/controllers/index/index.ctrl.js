@@ -1,6 +1,5 @@
-angular.module("myApp").controller("indexCtrl",function($scope,httpServer){
+angular.module("myApp").controller("indexCtrl",function($scope,indexServer){
 
-	   	$scope.ss='aaa'
 	   	var swiper = new Swiper('.index-banner',{
 		   	direction:"horizontal",
 		    pagination: '.swiper-pagination',
@@ -12,6 +11,10 @@ angular.module("myApp").controller("indexCtrl",function($scope,httpServer){
 	        autoplayDisableOnInteraction: false
 		})
 
+	   	indexServer.getMenu(function(data){
+	   		// console.log(data)
+	   		$scope.menu=data.RetValue;
+	   	})
 		
 
 })
