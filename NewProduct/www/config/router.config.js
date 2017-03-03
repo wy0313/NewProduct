@@ -99,13 +99,18 @@ angular.module("myApp").config(function($stateProvider,$urlRouterProvider){
 	})
 	.state("zhuce",{
 		url:"/zhuce",
-		templateUrl:"./controllers/zhuce/zhuce.html",
+		templateUrl:"./controllers/login/zhuce.html",
 		controller:"zhuceCtrl"
 	})
 	.state("wangji",{
 		url:"/wangji",
-		templateUrl:"./controllers/wangji/wangji.html",
+		templateUrl:"./controllers/login/wangji.html",
 		controller:"wangjiCtrl"
+	})
+	.state("change",{
+		url:"/change",
+		templateUrl:"./controllers/login/change.html",
+		controller:"changeCtrl"
 	})
 	
 })

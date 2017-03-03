@@ -80,7 +80,32 @@ angular.module('myApp').factory('userServer',function(httpServer,$ionicPopup,$st
 	                errorCallback( error );
 	            })
 
-	        }
+	        },
 
+	  	RepassSmsSend :function(options,successCallback,errorCallback ){
+	  		httpServer.post( "Account/RepassSmsSend",{
+
+                mobile:options.mobile
+
+            },function( res ){
+                successCallback(res);
+                //console.log(res)
+            },function(error){
+                errorCallback( error );
+            })
+	  	},
+	  	SmsVerify :function(options,successCallback,errorCallback ){
+	  		httpServer.post( "Account/SmsVerify",{
+
+                mobile:options.mobile,
+                smsCode:options.smsCode
+
+            },function( res ){
+                successCallback(res);
+                //console.log(res)
+            },function(error){
+                errorCallback( error );
+            })
 	  	}
+	}
 })
