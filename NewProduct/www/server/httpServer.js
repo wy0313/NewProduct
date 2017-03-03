@@ -63,8 +63,8 @@ angular.module( 'myApp' ).factory( "httpServer",function( $http,$ionicLoading ){
 	    		successCallback( res )
 	    		$ionicLoading.hide();
 	    	},
-	    	function( res ){
-	    		errorCallback( res )
+	    	function( error ){
+	    		console.log(error)
 	    		$ionicLoading.hide();
 	    	}
     	)

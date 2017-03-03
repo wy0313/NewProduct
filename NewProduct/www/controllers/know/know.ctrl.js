@@ -1,7 +1,5 @@
-angular.module("myApp").controller("knowCtrl",function($scope,$http){
-	$http.get("controllers/know/know.json")
-        .success(function(aa){
-        $scope.quan=aa.s;
-    })
-    
+angular.module("myApp").controller("knowCtrl",function($scope,knowledgeServer,userServer){
+	var userId=userServer.getUserId();
+	console.log(userId)
 })
+ 

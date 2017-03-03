@@ -490,11 +490,6 @@ body, html {
         font-weight: bolder;
         color: #fff;
         border: none; }
-      .course nav a :first-child.on {
-        background: #FD9A00;
-        font-weight: bolder;
-        color: #fff;
-        border: none; }
   .course .duan a .hang {
     width: 100%;
     display: -webkit-box;
