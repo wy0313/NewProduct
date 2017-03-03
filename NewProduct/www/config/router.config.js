@@ -85,17 +85,27 @@ angular.module("myApp").config(function($stateProvider,$urlRouterProvider){
 		templateUrl:"./controllers/course/course.html",
 		controller:"courseCtrl"
 	})
-		.state("content",{
-			url:"/course/content",
-			params:{"cateId":null},
-			templateUrl:"./controllers/course/content/content.html",
-			controller:"contentCtrl"
-		})
+	.state("content",{
+		url:"/course/content",
+		params:{"cateId":null},
+		templateUrl:"./controllers/course/content/content.html",
+		controller:"contentCtrl"
+	})
 	
 	.state("login",{
 		url:"/login",
 		templateUrl:"./controllers/login/login.html",
 		controller:"loginCtrl"
+	})
+	.state("zhuce",{
+		url:"/zhuce",
+		templateUrl:"./controllers/zhuce/zhuce.html",
+		controller:"zhuceCtrl"
+	})
+	.state("wangji",{
+		url:"/wangji",
+		templateUrl:"./controllers/wangji/wangji.html",
+		controller:"wangjiCtrl"
 	})
 	
 })

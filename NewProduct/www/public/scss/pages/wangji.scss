@@ -1,0 +1,86 @@
+.zc{
+	margin: 20% auto;
+	.biao{
+		width: 100%;
+		margin-top:1%;
+		display: -webkit-box;
+		-webkit-box-orient:vertical;
+		-webkit-box-pack:center;
+		-webkit-box-align:center;
+		.ti{
+			a{
+				display: block;
+				width: 150px;
+				height: 40px;
+				border: 1px solid pink;
+				color: #999;
+				text-align: center;
+				line-height: 40px;
+				border-radius: 15px;
+				font-size: 18px;
+				margin: 10px;
+			}
+		}
+		.biaoti{
+			font-size: 50px;
+			margin: 10px;
+			h2{
+				color: orange;
+			}
+				
+		}
+		.jsj{
+
+				margin: 10px;
+			ul{
+				display: -webkit-box;
+				li{
+					padding: 0 25px;
+					font-size: 18px;
+					color: #ccc;
+				}
+			}
+		}
+	}
+	.login-page{
+		margin-top:50px;
+		.mo{
+			width:90%;
+			height:45px;
+			margin:3% 5%;
+			border:1px solid #ccc;
+			font-size:12px;
+		}
+		.yan{
+			position: relative;
+		}
+		.yz{
+			position: absolute;
+			top: 10px;
+			right: 30px;
+			background: orange;
+			border-radius: 15px;
+			padding: 3px 15px;
+			color: #fff;
+		}
+
+	}
+	.login-btn{
+		width:90%;
+		height:45px;
+		margin:10% 5%;
+		background: #FF9B00;
+		border-radius:45px;
+		display:-webkit-box;
+		-webkit-box-align:center;
+		-webkit-box-pack:center;
+		.btn{
+			list-style: none;
+			border:none;
+			font-size:14px;
+			background: #FF9B00;
+			color:#fff;
+			font-weight:normal;
+		}
+	}
+}	

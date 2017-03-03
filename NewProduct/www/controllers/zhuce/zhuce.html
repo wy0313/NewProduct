@@ -1,0 +1,29 @@
+<ion-view title="注册" hide-back-button="true">
+    <ion-content>
+    	<div class="zc">
+            <div class="biao">
+                <div class="ti">
+                    <a href="#">&nbsp;中&nbsp;&nbsp;律&nbsp;&nbsp;教&nbsp;&nbsp;育&nbsp;</a>
+                </div>
+                <div class="biaoti">
+                    <h2>刷&nbsp;题&nbsp;宝</h2>
+                </div>
+            </div>
+              <div class="login-page">
+                <input type="text" name="userName"  ng-model='userName'  placeholder="请输入手机号" class="mo">
+                <p class="yan">
+                  <input type="text" placeholder="请输入验证码" class="mo">
+                  <a href="jjavascript:;" class="yz">获取验证码</a>
+                </p>
+                <input type="password" name="userpwd"  ng-model='userpwd'  placeholder="请输入密码" class="mo">
+
+              </div>
+              <div class="login-btn">
+                 <button ng-click='loginDo()' class="btn">注册</button>
+              </div>
+              <div class="namber">
+                <p>已有账号去<a href="javascript:;">注册</p>
+              </div>   
+        </div>
+	</ion-content>
+</ion-view>
