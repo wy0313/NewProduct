@@ -1,8 +1,7 @@
 .zhu{
-	margin-top: 10%;
+	margin-top: 5%;
 	.biao{
 		width: 100%;
-		margin-top:1%;
 		display: -webkit-box;
 		-webkit-box-orient:vertical;
 		-webkit-box-pack:center;
@@ -42,9 +41,14 @@
 			}
 		}
 	}
-	.login-page{
+	.zhu-page{
 		margin-top:50px;
-		.mo{
+		display: -webkit-box;
+		-webkit-box-orient:vertical;
+		-webkit-box-pack:center;
+		-webkit-box-align:center;
+		input{
+			display: block;
 			width:90%;
 			height:45px;
 			margin:3% 5%;
@@ -53,19 +57,29 @@
 		}
 		.yan{
 			position: relative;
+			width:100%;
+			input{
+				display: block;
+				width:90%;
+				height:45px;
+				margin:3% 5%;
+				border:1px solid #ccc;
+				font-size:12px;
+			}
+			.yz{
+				position: absolute;
+				top: 18px;
+				right: 30px;
+				background: orange;
+				border-radius: 15px;
+				padding: 3px 15px;
+				color: #fff;
+			}
 		}
-		.yz{
-			position: absolute;
-			top: 10px;
-			right: 30px;
-			background: orange;
-			border-radius: 15px;
-			padding: 3px 15px;
-			color: #fff;
-		}
+		
 
 	}
-	.login-btn{
+	.zhu-btn{
 		width:90%;
 		height:45px;
 		margin:10% 5%;

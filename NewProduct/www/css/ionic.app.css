@@ -752,14 +752,14 @@ body, html {
         font-size: 18px;
         color: #ccc; }
 
-.biao {
+.login .login-biao {
   width: 100%;
   margin-top: 1%;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-box-pack: center;
   -webkit-box-align: center; }
-  .biao .ti a {
+  .login .login-biao .ti a {
     display: block;
     width: 150px;
     height: 40px;
@@ -770,30 +770,30 @@ body, html {
     border-radius: 15px;
     font-size: 18px;
     margin: 10px; }
-  .biao .biaoti {
+  .login .login-biao .biaoti {
     font-size: 50px;
     margin: 10px; }
-    .biao .biaoti h2 {
+    .login .login-biao .biaoti h2 {
       color: orange; }
-  .biao .jsj {
+  .login .login-biao .jsj {
     margin: 10px; }
-    .biao .jsj ul {
+    .login .login-biao .jsj ul {
       display: -webkit-box; }
-      .biao .jsj ul li {
+      .login .login-biao .jsj ul li {
         padding: 0 25px;
         font-size: 18px;
         color: #ccc; }
 
-.login-page {
+.login .login-page {
   margin-top: 50px; }
-  .login-page .mo {
+  .login .login-page .mo {
     width: 90%;
     height: 45px;
     margin: 3% 5%;
     border: 1px solid #ccc;
     font-size: 12px; }
 
-.login-btn {
+.login .login-btn {
   width: 90%;
   height: 45px;
   margin: 10% 5%;
@@ -802,7 +802,7 @@ body, html {
   display: -webkit-box;
   -webkit-box-align: center;
   -webkit-box-pack: center; }
-  .login-btn .btn {
+  .login .login-btn .btn {
     list-style: none;
     border: none;
     font-size: 14px;
@@ -810,20 +810,19 @@ body, html {
     color: #fff;
     font-weight: normal; }
 
-.namber {
+.login .namber {
   width: 90%;
   margin: 10% 5%;
   display: -webkit-box;
   -webkit-box-align: center;
   -webkit-box-pack: center; }
-  .namber p a {
+  .login .namber p a {
     color: #FF9B00; }
 
 .zhu {
-  margin-top: 10%; }
+  margin-top: 5%; }
   .zhu .biao {
     width: 100%;
-    margin-top: 1%;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-box-pack: center;
@@ -852,25 +851,38 @@ body, html {
           padding: 0 25px;
           font-size: 18px;
           color: #fff; }
-  .zhu .login-page {
-    margin-top: 50px; }
-    .zhu .login-page .mo {
+  .zhu .zhu-page {
+    margin-top: 50px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-box-align: center; }
+    .zhu .zhu-page input {
+      display: block;
       width: 90%;
       height: 45px;
       margin: 3% 5%;
       border: 1px solid #ccc;
       font-size: 12px; }
-    .zhu .login-page .yan {
-      position: relative; }
-    .zhu .login-page .yz {
-      position: absolute;
-      top: 10px;
-      right: 30px;
-      background: orange;
-      border-radius: 15px;
-      padding: 3px 15px;
-      color: #fff; }
-  .zhu .login-btn {
+    .zhu .zhu-page .yan {
+      position: relative;
+      width: 100%; }
+      .zhu .zhu-page .yan input {
+        display: block;
+        width: 90%;
+        height: 45px;
+        margin: 3% 5%;
+        border: 1px solid #ccc;
+        font-size: 12px; }
+      .zhu .zhu-page .yan .yz {
+        position: absolute;
+        top: 18px;
+        right: 30px;
+        background: orange;
+        border-radius: 15px;
+        padding: 3px 15px;
+        color: #fff; }
+  .zhu .zhu-btn {
     width: 90%;
     height: 45px;
     margin: 10% 5%;
@@ -879,7 +891,7 @@ body, html {
     display: -webkit-box;
     -webkit-box-align: center;
     -webkit-box-pack: center; }
-    .zhu .login-btn .btn {
+    .zhu .zhu-btn .btn {
       list-style: none;
       border: none;
       font-size: 14px;

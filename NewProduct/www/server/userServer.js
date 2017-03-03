@@ -8,6 +8,7 @@ angular.module('myApp').factory('userServer',function(httpServer,$ionicPopup,$st
 				Pwd : options.Pwd
 		    },function( res ){
 				successCallback( res )
+				console.log(res)
 			},function( error ){
 				errorCallback( error )
 			})
@@ -40,7 +41,7 @@ angular.module('myApp').factory('userServer',function(httpServer,$ionicPopup,$st
 		  },
 
 		getUserId : function(){
-			
+
 			if (window.localStorage['user']) {
 
 				return   JSON.parse( window.localStorage['user']).id;
@@ -57,6 +58,7 @@ angular.module('myApp').factory('userServer',function(httpServer,$ionicPopup,$st
                 mobile:options.mobile
             },function( res ){
                 successCallback(res);
+                //console.log(res)
             },function(error){
                 errorCallback( error );
             })
