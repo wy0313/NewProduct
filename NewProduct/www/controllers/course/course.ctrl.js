@@ -13,15 +13,16 @@ angular.module("myApp").controller("courseCtrl",function($scope,userServer,cours
 
 	
 	$scope.getID=function(index){
-
+		
 		var list=document.querySelectorAll(".course nav a");
 		id=list[index].getAttribute("data-id");
-
 		for(var i=0;i<list.length;i++){
+			list[0].className="on";
 			list[i].setAttribute("class","");
 		}
 		
 		list[index].setAttribute("class","on");
+
 		add(id)
 		
 	}
@@ -36,7 +37,6 @@ angular.module("myApp").controller("courseCtrl",function($scope,userServer,cours
 		},function(data){
 			
 			$scope.list=data.RetValue;
-			document.querySelectorAll(".course nav a")[0].className="on"
 			
 		})
 	}
