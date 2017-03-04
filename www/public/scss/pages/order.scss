@@ -1,0 +1,35 @@
+.content{
+	width: 100%;
+	.con{
+		
+		display: -webkit-box;
+		border-bottom: 1px solid #ccc;
+		.left{
+			-webkit-box-flex:1;
+			margin: 10px 30px;
+			h3{
+				padding-top: 10px;
+				color: #666;
+			}
+			p{
+				padding-top: 10px;
+				color: #999;
+			}
+		}
+		.right{
+			-webkit-box-flex:1;
+			text-align: right;
+			margin: 10px 30px;
+			p{
+				padding-top: 10px;
+				span{
+					padding:0 5px;
+					color: #999;
+					&.on{
+						color: red;
+					}
+				}
+			}
+		}
+	}
+}

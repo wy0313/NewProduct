@@ -1,0 +1,17 @@
+<ion-view title="知识点-中律教育" >
+    <ion-content>
+        <div class="k-cha">
+          <p>
+	          <input type="text" placeholder="请输入关键字" ng-click="s=true">
+	          <i class="ion-search"></i>  
+          </p>
+          <span ng-click="s=false" ng-show="s">取消</span>
+        </div>
+        <div ng-if='listMenu.RetValue == null'>{{listMenu.description}}</div>
+        <div class="k-list">
+            <div ng-repeat='item in listMenu.RetValue' style="padding: 10px;border-bottom: solid 1px #ccc" ui-sref='knowListDetail({Cid:item.id})'>
+            	<a>{{item.title}}  <span style="float: right;">{{item.ccount}}/{{item.count}}题</span></a>
+            </div>       	 
+        </div>
+    </ion-content>
+</ion-view>

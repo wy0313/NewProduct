@@ -1,0 +1,11 @@
+<ion-view title="知识点-中律教育" >
+    <ion-content>
+        <div class="k-list">
+            <div ng-if='listMenu.RetValue == null'>{{listMenu.description}}</div>
+            <div ng-repeat='item in listMenu.RetValue' style="padding: 10px;border-bottom: solid 1px #ccc" 
+               ui-sref='knowQuan({quan : item.id})'>
+              <a >{{item.title}} <span style="float: right;">{{item.ccount}}/{{item.count}}题</span></a>
+            </div>                   	 
+        </div>
+    </ion-content>
+</ion-view>

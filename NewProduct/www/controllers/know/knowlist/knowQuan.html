@@ -1,0 +1,16 @@
+<ion-view title="知识点-中律教育" >
+    <ion-content>
+            <div>{{ listMenu.title }}</div>
+            <div> <span style="text-align: center;
+                               display:block;
+                               border: solid 1px;
+                               margin-top: 20px;"
+                               ui-sref='knowcontent({ti : x.id})'
+                               ng-repeat='x in  listMenu.list' 
+                               >             
+
+                               {{x.sort_id}}
+                  </span>
+            </div>
+    </ion-content>
+</ion-view>

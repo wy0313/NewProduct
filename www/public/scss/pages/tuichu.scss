@@ -1,0 +1,42 @@
+.tuichuye{
+	width: 100%;
+	margin-top:50%;
+	display: -webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
+	.zhonglv{
+		a{
+			display: block;
+			width: 150px;
+			height: 40px;
+			border: 1px solid pink;
+			color: #999;
+			text-align: center;
+			line-height: 40px;
+			border-radius: 15px;
+			font-size: 18px;
+			margin: 10px;
+		}
+	}
+	.biaoti{
+		font-size: 50px;
+		margin: 10px;
+		h2{
+			color: orange;
+		}
+			
+	}
+	.jsj{
+
+			margin: 10px;
+		ul{
+			display: -webkit-box;
+			li{
+				padding: 0 25px;
+				font-size: 18px;
+				color: #ccc;
+			}
+		}
+	}
+}

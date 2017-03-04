@@ -38,6 +38,26 @@ angular.module("myApp").config(function($stateProvider,$urlRouterProvider){
 		templateUrl:"./controllers/know/know.html",
 		controller:"knowCtrl"
 	})
+	.state("knowList",{
+		url:"/know/knowList/:id",
+		templateUrl:"./controllers/know/knowList/knowList.html",
+		controller:"knowListCtrl"
+	})
+	.state("knowListDetail",{
+		url:"/know/knowList/knowListDetail/:Cid",
+		templateUrl:"./controllers/know/knowList/knowListDetail.html",
+		controller:"knowListDetailCtrl"
+	})
+	.state("knowQuan",{
+		url:"/know/knowList/knowListDetail/knowQuan/:quan",
+		templateUrl:"./controllers/know/knowList/knowQuan.html",
+		controller:"knowQuanCtrl"
+	})
+	.state("knowcontent",{
+		url:"/know/knowList/knowListDetail/knowQuan/knowcontent/:ti",
+		templateUrl:"./controllers/know/knowList/knowcontent.html",
+		controller:"knowcontentCtrl"
+	})
 	.state("myself",{
 		url:"/myself",
 		templateUrl:"./controllers/myself/myself.html",
