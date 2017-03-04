@@ -4,11 +4,25 @@ angular.module("myApp").controller("changeCtrl",function($scope,$state,userServe
         $scope.userpwd='';
                          
         $scope.change = function(){
-            console.log(this.userPwd+","+this.userpwd)          
+                 
             if(this.userPwd==this.userpwd){
-                $state.go("login");
+                userServer.ReUserPassWord({
+
+                    mobile:15101019367,
+                    new_password:this.userPwd
+
+                },function(data){
+                    console.log(data)
+                    if(data.data.RetValue){
+                        $state.go("login");
+                    }
+                },function(err){
+                    console.log(err)
+                })  
+                 
             }else{
                 alert("密码有误")
-            }
+            }  
+            
         }
 })  

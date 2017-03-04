@@ -106,6 +106,19 @@ angular.module('myApp').factory('userServer',function(httpServer,$ionicPopup,$st
             },function(error){
                 errorCallback( error );
             })
+	  	},
+	  	ReUserPassWord:function(options,successCallback,errorCallback ){
+	  		httpServer.post( "Account/ReUserPassWord",{
+
+                mobile:options.mobile,
+                new_password:options.new_password
+
+            },function( res ){
+                successCallback(res);
+                //console.log(res)
+            },function(error){
+                errorCallback( error );
+            })
 	  	}
 	}
 })
